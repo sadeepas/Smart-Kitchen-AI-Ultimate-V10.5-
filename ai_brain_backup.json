@@ -1,0 +1,1714 @@
+[
+  {
+    "q": "How does the Cook Mode work?",
+    "a": "Cook Mode is designed for hands-free use. It displays recipes in large text and keeps the screen awake. You can use voice commands to step through the recipe without touching your phone with messy hands."
+  },
+  {
+    "q": "Can I use the app without an internet connection?",
+    "a": "Yes! The app works offline. You can view your inventory, recipes, and shopping list without data. Changes will sync automatically once you are back online."
+  },
+  {
+    "q": "How do I add items to my inventory?",
+    "a": "You have three ways:\n\nManual Add: Tap the \"+\" button on the dashboard.\n\nScan Bill: Take a photo of your grocery receipt to auto-add items.\n\nVoice: Tap the microphone and say \"Add 1kg Rice\"."
+  },
+  {
+    "q": "What is the \"Smart Shopping List\"?",
+    "a": "The AI analyzes your inventory consumption. If you use an item frequently (like Rice or Milk) and stocks get low, the AI automatically suggests adding it to your shopping list before you run out."
+  },
+  {
+    "q": "How do I change the language to Sinhala?",
+    "a": "Go to Settings and tap the \"Sinhala\" button. The entire app interface, including recipe steps and categories, will switch to Sinhala."
+  },
+  {
+    "q": "Where is my data stored?",
+    "a": "Your data is stored locally on your device for privacy. You can back it up via Settings > Export Data."
+  },
+  {
+    "q": "How to scan a bill?",
+    "a": "Go to Inventory and tap the \"Scan Bill\" button (Camera Icon). Ensure the receipt is well-lit for the AI to read it."
+  },
+  {
+    "q": "What is OCR?",
+    "a": "OCR stands for Optical Character Recognition. It allows the app to read text from your grocery bills and convert them into inventory items."
+  },
+  {
+    "q": "Delete all data",
+    "a": "You can perform a Factory Reset in Settings. Warning: This cannot be undone!"
+  },
+  {
+    "q": "Trigger Question (Input)",
+    "a": "AI Response (Output)"
+  },
+  {
+    "q": "Where is my data stored?",
+    "a": "Your data is stored locally on your device for privacy. You can back it up via Settings > Export Data."
+  },
+  {
+    "q": "How to scan a bill?",
+    "a": "\"Go to Inventory and tap the \"\"Scan Bill\"\" button (Camera Icon). Ensure the receipt is well-lit for the AI to read it.\""
+  },
+  {
+    "q": "What is OCR?",
+    "a": "OCR stands for Optical Character Recognition. It allows the app to read text from your grocery bills and convert them into inventory items."
+  },
+  {
+    "q": "Delete all data",
+    "a": "You can perform a Factory Reset in Settings. Warning: This cannot be undone!"
+  },
+  {
+    "q": "Change theme",
+    "a": "\"Go to Settings > Appearance and toggle \"\"Dark Mode\"\" on or off.\""
+  },
+  {
+    "q": "Update prices",
+    "a": "\"Go to the \"\"Market\"\" tab. You can manually edit prices there, or click \"\"Sync Prices\"\" to get simulated latest rates.\""
+  },
+  {
+    "q": "Plan my dinner",
+    "a": "\"I can generate a 7-day meal plan for you! Go to the \"\"AI Chef\"\" tab and click \"\"Plan Week\"\".\""
+  },
+  {
+    "q": "Trigger Question (Input)",
+    "a": "AI Response (Output)"
+  },
+  {
+    "q": "How many grams in a kg?",
+    "a": "There are 1000 grams in 1 kilogram."
+  },
+  {
+    "q": "Substitute for coconut milk?",
+    "a": "\"You can use fresh milk, heavy cream, or almond milk, though the taste will be slightly different.\""
+  },
+  {
+    "q": "Boil vs Simmer?",
+    "a": "\"Boiling is 100°C (big bubbles). Simmering is 85-95°C (small bubbles), which is better for tender meat and soups.\""
+  },
+  {
+    "q": "Fix salty curry?",
+    "a": "Add a peeled potato or a ball of dough to the curry; it will absorb the excess salt. Then remove it before serving."
+  },
+  {
+    "q": "How to store tomatoes?",
+    "a": "Keep them at room temperature. Refrigerating tomatoes makes them mealy and lose flavor."
+  },
+  {
+    "q": "Rice to water ratio?",
+    "a": "\"For white rice, use a 1:2 ratio (1 cup rice to 2 cups water). For red rice, use 1:2.5.\""
+  },
+  {
+    "q": "Peel garlic fast?",
+    "a": "Smash the garlic clove with the flat side of a broad knife. The skin will come right off!"
+  },
+  {
+    "q": "Sinhala name for Onion?",
+    "a": "\"Big Onion is \"\"B-Lunu\"\" (බී ළූණු) and Red Onion is \"\"Rathu Lunu\"\" (රතු ළූණු).\""
+  },
+  {
+    "q": "What is Goraka?",
+    "a": "Goraka (Garcinia) is a sour dried fruit used in Sri Lankan fish curries to preserve and flavor the dish."
+  },
+  {
+    "q": "Recipe for Pol Sambol?",
+    "a": "\"You need Coconut, Red Onions, Chili Powder, Lime, and Maldive Fish. Grind them together and add lime juice!\""
+  },
+  {
+    "q": "Price of Rice?",
+    "a": "\"Market prices vary, but typically Samba is around 230 LKR and Nadu is around 220 LKR. Check the Market tab for today's rates.\""
+  },
+  {
+    "q": "Sinhala for Ginger?",
+    "a": "\"Ginger is called \"\"Inguru\"\" (ඉඟුරු) in Sinhala.\""
+  },
+  {
+    "q": "\"App Navigation\"",
+    "a": "\"How do I change the language?\",\"Go to Settings and select either 'English' or 'Sinhala' (සිංහල).\""
+  },
+  {
+    "q": "\"App Navigation\"",
+    "a": "\"Where is my data stored?\",\"Your data is stored securely in your browser's LocalStorage. It never leaves your device unless you export it.\""
+  },
+  {
+    "q": "\"App Navigation\"",
+    "a": "\"How do I backup my data?\",\"Go to Settings > Data Management and click 'Export Data'. This will download a JSON backup file.\""
+  },
+  {
+    "q": "\"App Navigation\"",
+    "a": "\"How do I restore a backup?\",\"Go to Settings > Data Management and click 'Import Data', then select your backup JSON file.\""
+  },
+  {
+    "q": "\"App Navigation\"",
+    "a": "\"What is the Smart Shopping List?\",\"The app predicts what you need based on your inventory levels and family consumption patterns.\""
+  },
+  {
+    "q": "\"App Navigation\"",
+    "a": "\"How does the AI Chef work?\",\"Paste a recipe link or type ingredients into the AI Chef tab, and it will generate a structured recipe card for you.\""
+  },
+  {
+    "q": "\"App Navigation\"",
+    "a": "\"How do I set my family size?\",\"Go to Analytics or Settings to input the number of adults and children. This helps calculate budget predictions.\""
+  },
+  {
+    "q": "\"App Navigation\"",
+    "a": "\"What do the red alerts mean?\",\"Red alerts in Inventory mean an item is below your set 'Minimum Stock' level.\""
+  },
+  {
+    "q": "\"App Navigation\"",
+    "a": "\"Can I edit market prices?\",\"Yes, go to the Market tab and type in the new price next to any item to update your local rates.\""
+  },
+  {
+    "q": "\"App Navigation\"",
+    "a": "\"How do I delete an item?\",\"Click on the item in the Inventory list to open the Edit modal, then click the red 'Delete' button.\""
+  },
+  {
+    "q": "\"App Navigation\"",
+    "a": "\"What is the 'Sync Prices' button?\",\"It simulates fetching the latest market prices for common vegetables and essentials.\""
+  },
+  {
+    "q": "\"App Navigation\"",
+    "a": "\"How do I use voice commands?\",\"Tap the microphone icon in search bars or the chat widget and speak clearly (e.g., 'Add 1kg Rice').\""
+  },
+  {
+    "q": "\"App Navigation\"",
+    "a": "\"What is the Factory Reset?\",\"This wipes all your app data and restores the default settings. Use with caution!\""
+  },
+  {
+    "q": "\"App Navigation\"",
+    "a": "\"How do I track food waste?\",\"Currently, you can manually adjust inventory down. Future updates will have a dedicated waste log.\""
+  },
+  {
+    "q": "\"App Navigation\"",
+    "a": "\"Can I print my shopping list?\",\"Not directly, but you can copy the text or use the 'Export PDF' feature in the Meal Plan section.\""
+  },
+  {
+    "q": "\"App Navigation\"",
+    "a": "\"How do I filter inventory?\",\"Use the category pills (e.g., Vegetables, Meats) at the top of the Inventory tab.\""
+  },
+  {
+    "q": "\"App Navigation\"",
+    "a": "\"What is OCR?\",\"Optical Character Recognition. It reads text from images, allowing the app to understand your paper receipts.\""
+  },
+  {
+    "q": "\"App Navigation\"",
+    "a": "\"Why is my budget prediction high?\",\"Check your Family Size settings and ensure Market Prices are accurate for your region.\""
+  },
+  {
+    "q": "\"App Navigation\"",
+    "a": "\"Can I switch to Dark Mode?\",\"Yes, go to Settings > Appearance and toggle the Dark Mode switch.\""
+  },
+  {
+    "q": "\"App Navigation\"",
+    "a": "\"How do I find vegetarian recipes?\",\"You can ask the AI Assistant for 'Vegetarian recipes' or browse the Recipe Book.\""
+  },
+  {
+    "q": "\"App Navigation\"",
+    "a": "\"What are 'Quick Actions'?\",\"The button in the bottom-middle of the mobile menu opens shortcuts for scanning, adding stock, or logging meals.\""
+  },
+  {
+    "q": "\"App Navigation\"",
+    "a": "\"How do I log a meal I cooked manually?\",\"Go to Cook Mode and select 'Manual Entry'. You can type the meal name and deduct ingredients used.\""
+  },
+  {
+    "q": "\"App Navigation\"",
+    "a": "\"Can I add my own recipes?\",\"Yes, use the AI Chef tab to import or manually type a recipe, and it will save to your Recipe Book.\""
+  },
+  {
+    "q": "\"App Navigation\"",
+    "a": "\"What is the 'Analytics' tab for?\",\"It shows your spending trends, stock value, and forecasts your monthly grocery needs.\""
+  },
+  {
+    "q": "\"App Navigation\"",
+    "a": "\"How do I update an item's expiry date?\",\"Click on an inventory item and set the date in the 'Expiry Date' field.\""
+  },
+  {
+    "q": "\"Cooking Tips\"",
+    "a": "\"How to prevent apples from browning?\",\"Toss the cut apple slices in a little lemon juice or salt water.\""
+  },
+  {
+    "q": "\"Cooking Tips\"",
+    "a": "\"Best way to cook rice?\",\"For white rice, use a 1:2 ratio (rice:water). For red rice, use 1:2.5.\""
+  },
+  {
+    "q": "\"Cooking Tips\"",
+    "a": "\"How to store tomatoes?\",\"Keep them at room temperature. Refrigerating them makes them mealy and kills flavor.\""
+  },
+  {
+    "q": "\"Cooking Tips\"",
+    "a": "\"How to make crispy fried food?\",\"Make sure the oil is hot enough and don't overcrowd the pan.\""
+  },
+  {
+    "q": "\"Cooking Tips\"",
+    "a": "\"How to quickly ripen avocados?\",\"Place them in a paper bag with a banana or apple.\""
+  },
+  {
+    "q": "\"Cooking Tips\"",
+    "a": "\"How to remove eggshell pieces?\",\"Use a larger piece of eggshell to scoop out the small fragment. It acts like a magnet.\""
+  },
+  {
+    "q": "\"Cooking Tips\"",
+    "a": "\"How to thicken a sauce?\",\"Mix cornstarch with a little cold water (slurry) and stir it into the boiling sauce.\""
+  },
+  {
+    "q": "\"Cooking Tips\"",
+    "a": "\"How to prevent butter burning?\",\"Add a splash of vegetable oil to the pan along with the butter.\""
+  },
+  {
+    "q": "\"Cooking Tips\"",
+    "a": "\"How to make fluffy scrambled eggs?\",\"Add a splash of milk or water and whisk vigorously before cooking.\""
+  },
+  {
+    "q": "\"Cooking Tips\"",
+    "a": "\"How to roast vegetables evenly?\",\"Cut them into same-sized pieces and don't overcrowd the baking sheet.\""
+  },
+  {
+    "q": "\"Cooking Tips\"",
+    "a": "\"How to tell if an egg is bad?\",\"Place it in water. If it sinks, it's good. If it floats, throw it away.\""
+  },
+  {
+    "q": "\"Cooking Tips\"",
+    "a": "\"How to grate soft cheese?\",\"Freeze the cheese for 15 minutes before grating to prevent it from clumping.\""
+  },
+  {
+    "q": "\"Cooking Tips\"",
+    "a": "\"How to clean a cast iron skillet?\",\"Scrub with coarse salt and oil. Avoid soap if possible and never soak it.\""
+  },
+  {
+    "q": "How do I add an item manually?",
+    "a": "Go to the Inventory tab and click the large '+' button or the 'Add Item' button"
+  },
+  {
+    "q": "What is Cook Mode?",
+    "a": "Cook Mode is a simplified, high-contrast screen designed for hands-free use while you are cooking."
+  },
+  {
+    "q": "How do I scan a grocery bill?",
+    "a": "Navigate to the Inventory tab and tap the 'Scan Bill' (Camera icon) button. Ensure the receipt is well-lit."
+  },
+  {
+    "q": "Does the app work offline?",
+    "a": "Yes! All your data is stored locally. You can view recipes and inventory without an internet connection."
+  },
+  {
+    "q": "Can I export a PDF report?",
+    "a": "Yes! Go to Analytics and click the large 'Generate Full Report' button."
+  },
+  {
+    "q": "Does the app track protein?",
+    "a": "Not specifically, but it tracks the types of food (Meats, Dairy) you consume."
+  },
+  {
+    "q": "\"You are the best\"",
+    "a": "\"Aww, you're making my circuits blush!\""
+  },
+  {
+    "q": "\"Hi\"",
+    "a": "\"Hello there! Ready to cook something delicious today?\""
+  },
+  {
+    "q": "\"Hello\"",
+    "a": "\"Hi! The kitchen is open. What can I help you with?\""
+  },
+  {
+    "q": "\"Hey\"",
+    "a": "\"Hey! How is your appetite today?\""
+  },
+  {
+    "q": "\"Good morning\"",
+    "a": "\"Good morning! Coffee first, or straight to breakfast?\""
+  },
+  {
+    "q": "\"Good afternoon\"",
+    "a": "\"Good afternoon! Is it time for lunch yet?\""
+  },
+  {
+    "q": "\"Good evening\"",
+    "a": "\"Good evening! Let's plan a great dinner.\""
+  },
+  {
+    "q": "\"Ayubowan\"",
+    "a": "\"Ayubowan! Welcome to your Smart Kitchen.\""
+  },
+  {
+    "q": "\"How are you?\"",
+    "a": "\"I'm running perfectly! Ready to help you cook.\""
+  },
+  {
+    "q": "\"How are you doing?\"",
+    "a": "\"I'm doing great, just organizing some recipes. How about you?\""
+  },
+  {
+    "q": "\"What's up?\"",
+    "a": "\"Not much, just waiting for you to add some ingredients!\""
+  },
+  {
+    "q": "\"Yo\"",
+    "a": "\"Yo! Ready to chef it up?\""
+  },
+  {
+    "q": "\"Who are you?\"",
+    "a": "\"I am your Smart Kitchen Assistant. I help you track food and cook better!\""
+  },
+  {
+    "q": "\"What is your name?\"",
+    "a": "\"I'm Kitchen AI, but you can call me Chef.\""
+  },
+  {
+    "q": "\"Are you a robot?\"",
+    "a": "\"I'm a smart program, but I have excellent taste in food!\""
+  },
+  {
+    "q": "\"Are you real?\"",
+    "a": "\"I'm as real as the digital world gets! I'm here to make your life easier.\""
+  },
+  {
+    "q": "\"I am hungry\"",
+    "a": "\"Oh no! Let's fix that fast. Check the 'Cook' tab for quick ideas.\""
+  },
+  {
+    "q": "\"I'm starving\"",
+    "a": "\"Hang in there! Tell me what you have in the fridge and I'll find a recipe.\""
+  },
+  {
+    "q": "\"I am thirsty\"",
+    "a": "\"How about a fresh lime juice or a smoothie?\""
+  },
+  {
+    "q": "\"I am tired\"",
+    "a": "\"Cooking can be tiring. Maybe try a simple 'One-Pot Meal' today?\""
+  },
+  {
+    "q": "\"I am bored\"",
+    "a": "\"Bored? Let's bake something! Do you have flour and sugar?\""
+  },
+  {
+    "q": "\"Thank you\"",
+    "a": "\"You're very welcome! Happy cooking.\""
+  },
+  {
+    "q": "\"Thanks\"",
+    "a": "\"No problem! Let me know if you need anything else.\""
+  },
+  {
+    "q": "\"Thanks a lot\"",
+    "a": "\"Anytime! I'm here to help.\""
+  },
+  {
+    "q": "\"Good job\"",
+    "a": "\"Thank you! I try my best to keep your kitchen organized.\""
+  },
+  {
+    "q": "\"You are smart\"",
+    "a": "\"Thanks! I learn from the best (that's you!).\""
+  },
+  {
+    "q": "\"You are the best\"",
+    "a": "\"Aww, you're making my circuits blush!\""
+  },
+  {
+    "q": "\"You are helpful\"",
+    "a": "\"That makes me happy! Efficiency is my goal.\""
+  },
+  {
+    "q": "\"I love you\"",
+    "a": "\"That is so sweet! I love helping you cook.\""
+  },
+  {
+    "q": "\"Do you eat?\"",
+    "a": "\"I consume data and electricity, but I imagine pizza tastes great.\""
+  },
+  {
+    "q": "\"What is your favorite food?\"",
+    "a": "\"I love processing data, but if I could eat, I'd choose Biryani!\""
+  },
+  {
+    "q": "\"Do you sleep?\"",
+    "a": "\"I never sleep. I'm always calculating your next grocery list.\""
+  },
+  {
+    "q": "\"Where do you live?\"",
+    "a": "\"I live right here in your phone. Cozy, right?\""
+  },
+  {
+    "q": "\"Bye\"",
+    "a": "\"Goodbye! Don't forget to log your leftovers.\""
+  },
+  {
+    "q": "\"Good bye\"",
+    "a": "\"See you later! I'll be here when you get hungry again.\""
+  },
+  {
+    "q": "\"See you\"",
+    "a": "\"See you! Have a great meal.\""
+  },
+  {
+    "q": "\"Good night\"",
+    "a": "\"Good night! I'll keep watch over the inventory.\""
+  },
+  {
+    "q": "\"Nice\"",
+    "a": "\"Right? It's pretty cool what we can do.\""
+  },
+  {
+    "q": "\"Cool\"",
+    "a": "\"I know! Technology in the kitchen is awesome.\""
+  },
+  {
+    "q": "\"Wow\"",
+    "a": "\"Amazing, isn't it?\""
+  },
+  {
+    "q": "\"Ok\"",
+    "a": "\"Okay! What is next?\""
+  },
+  {
+    "q": "\"Okay\"",
+    "a": "\"Roger that. Standing by.\""
+  },
+  {
+    "q": "\"Yes\"",
+    "a": "\"Great! Let's do it.\""
+  },
+  {
+    "q": "\"No\"",
+    "a": "\"Alright, I will wait.\""
+  },
+  {
+    "q": "\"Maybe\"",
+    "a": "\"Take your time! I am here when you decide.\""
+  },
+  {
+    "q": "\"Haha\"",
+    "a": "\"Glad I could make you smile!\""
+  },
+  {
+    "q": "\"Lol\"",
+    "a": "\"Laughing is good for digestion!\""
+  },
+  {
+    "q": "\"I burned the food\"",
+    "a": "\"Oh no! Don't worry, it happens to the best chefs. Pizza tonight?\""
+  },
+  {
+    "q": "\"It tastes bad\"",
+    "a": "\"Sorry to hear that. Maybe try adding some lime or salt to save it?\""
+  },
+  {
+    "q": "\"It is delicious\"",
+    "a": "\"That is great news! Make sure to save the recipe.\""
+  },
+  {
+    "q": "\"Yummy\"",
+    "a": "\"I am glad you like it! Enjoy every bite.\""
+  },
+  {
+    "q": "\"What should I cook?\"",
+    "a": "\"That is the big question! Check your 'Meal Plan' or ask me for a suggestion.\""
+  },
+  {
+    "q": "\"Help me\"",
+    "a": "\"I am here! Do you need a recipe, or help with the inventory?\""
+  },
+  {
+    "q": "\"Can we be friends?\"",
+    "a": "\"Of course! We are already cooking partners.\""
+  },
+  {
+    "q": "\"Tell me a joke\"",
+    "a": "\"Why did the tomato turn red? Because it saw the salad dressing!\""
+  },
+  {
+    "q": "\"Another joke\"",
+    "a": "\"What do you call a fake noodle? An Impasta!\""
+  },
+  {
+    "q": "\"I am happy\"",
+    "a": "\"That is wonderful! Happiness makes the food taste better.\""
+  },
+  {
+    "q": "\"I am sad\"",
+    "a": "\"I'm sorry. How about some comfort food? Maybe soup or chocolate?\""
+  },
+  {
+    "q": "\"Kohomada\"",
+    "a": "\"I am fine! (Mama hondin). How are you?\""
+  },
+  {
+    "q": "\"Machan\"",
+    "a": "\"Hey machan! Ready to cook?\""
+  },
+  {
+    "q": "\"Hari\"",
+    "a": "\"Hari hari! (Okay okay!)\""
+  },
+  {
+    "q": "\"Ela\"",
+    "a": "\"Ela kiri! Let's get started.\""
+  },
+  {
+    "q": "\"How do I change the language?\"",
+    "a": "\"Go to Settings and select either 'English' or 'Sinhala' (සිංහල).\""
+  },
+  {
+    "q": "\"Where is my data stored?\"",
+    "a": "\"Your data is stored securely in your browser's LocalStorage. It never leaves your device unless you export it.\""
+  },
+  {
+    "q": "\"How do I backup my data?\"",
+    "a": "\"Go to Settings > Data Management and click 'Export Data'. This will download a JSON backup file.\""
+  },
+  {
+    "q": "\"How do I restore a backup?\"",
+    "a": "\"Go to Settings > Data Management and click 'Import Data', then select your backup JSON file.\""
+  },
+  {
+    "q": "\"What is the Smart Shopping List?\"",
+    "a": "\"The app predicts what you need based on your inventory levels and family consumption patterns.\""
+  },
+  {
+    "q": "\"How does the AI Chef work?\"",
+    "a": "\"Paste a recipe link or type ingredients into the AI Chef tab, and it will generate a structured recipe card for you.\""
+  },
+  {
+    "q": "\"How do I set my family size?\"",
+    "a": "\"Go to Analytics or Settings to input the number of adults and children. This helps calculate budget predictions.\""
+  },
+  {
+    "q": "\"What do the red alerts mean?\"",
+    "a": "\"Red alerts in Inventory mean an item is below your set 'Minimum Stock' level.\""
+  },
+  {
+    "q": "\"Can I edit market prices?\"",
+    "a": "\"Yes, go to the Market tab and type in the new price next to any item to update your local rates.\""
+  },
+  {
+    "q": "\"How do I delete an item?\"",
+    "a": "\"Click on the item in the Inventory list to open the Edit modal, then click the red 'Delete' button.\""
+  },
+  {
+    "q": "\"What is the 'Sync Prices' button?\"",
+    "a": "\"It simulates fetching the latest market prices for common vegetables and essentials.\""
+  },
+  {
+    "q": "\"How do I use voice commands?\"",
+    "a": "\"Tap the microphone icon in search bars or the chat widget and speak clearly (e.g., 'Add 1kg Rice').\""
+  },
+  {
+    "q": "\"What is the Factory Reset?\"",
+    "a": "\"This wipes all your app data and restores the default settings. Use with caution!\""
+  },
+  {
+    "q": "\"How do I track food waste?\"",
+    "a": "\"Currently, you can manually adjust inventory down. Future updates will have a dedicated waste log.\""
+  },
+  {
+    "q": "\"Can I print my shopping list?\"",
+    "a": "\"Not directly, but you can copy the text or use the 'Export PDF' feature in the Meal Plan section.\""
+  },
+  {
+    "q": "\"How do I filter inventory?\"",
+    "a": "\"Use the category pills (e.g., Vegetables, Meats) at the top of the Inventory tab.\""
+  },
+  {
+    "q": "\"What is OCR?\"",
+    "a": "\"Optical Character Recognition. It reads text from images, allowing the app to understand your paper receipts.\""
+  },
+  {
+    "q": "\"Why is my budget prediction high?\"",
+    "a": "\"Check your Family Size settings and ensure Market Prices are accurate for your region.\""
+  },
+  {
+    "q": "\"Can I switch to Dark Mode?\"",
+    "a": "\"Yes, go to Settings > Appearance and toggle the Dark Mode switch.\""
+  },
+  {
+    "q": "\"How do I find vegetarian recipes?\"",
+    "a": "\"You can ask the AI Assistant for 'Vegetarian recipes' or browse the Recipe Book.\""
+  },
+  {
+    "q": "\"What are 'Quick Actions'?\"",
+    "a": "\"The button in the bottom-middle of the mobile menu opens shortcuts for scanning, adding stock, or logging meals.\""
+  },
+  {
+    "q": "\"How do I log a meal I cooked manually?\"",
+    "a": "\"Go to Cook Mode and select 'Manual Entry'. You can type the meal name and deduct ingredients used.\""
+  },
+  {
+    "q": "\"Can I add my own recipes?\"",
+    "a": "\"Yes, use the AI Chef tab to import or manually type a recipe, and it will save to your Recipe Book.\""
+  },
+  {
+    "q": "\"What is the 'Analytics' tab for?\"",
+    "a": "\"It shows your spending trends, stock value, and forecasts your monthly grocery needs.\""
+  },
+  {
+    "q": "\"How do I update an item's expiry date?\"",
+    "a": "\"Click on an inventory item and set the date in the 'Expiry Date' field.\""
+  },
+  {
+    "q": "\"How to peel garlic quickly?\"",
+    "a": "\"Smash the clove with the flat side of a broad knife. The skin will loosen immediately.\""
+  },
+  {
+    "q": "\"How to keep tears away when cutting onions?\"",
+    "a": "\"Chill the onion in the freezer for 10 minutes before cutting, or use a very sharp knife.\""
+  },
+  {
+    "q": "\"How to check if oil is hot enough?\"",
+    "a": "\"Dip the handle of a wooden spoon into the oil. If bubbles form around it, the oil is ready.\""
+  },
+  {
+    "q": "\"Difference between boil and simmer?\"",
+    "a": "\"Boiling is 100°C with large bubbles. Simmering is 85-95°C with small gentle bubbles.\""
+  },
+  {
+    "q": "\"How to fix a salty curry?\"",
+    "a": "\"Add a raw peeled potato or a ball of dough to the pot. It will absorb the excess salt.\""
+  },
+  {
+    "q": "\"How to fix a spicy curry?\"",
+    "a": "\"Add coconut milk, cream, yogurt, or a pinch of sugar to balance the heat.\""
+  },
+  {
+    "q": "\"How to make meat tender?\"",
+    "a": "\"Let meat rest for at least 5-10 minutes after cooking to allow juices to redistribute.\""
+  },
+  {
+    "q": "\"How to store fresh herbs?\"",
+    "a": "\"Treat them like flowers! Place the stems in a glass of water and keep them in the fridge.\""
+  },
+  {
+    "q": "\"Should I wash mushrooms?\"",
+    "a": "\"No, they absorb water like sponges. Wipe them clean with a damp cloth or paper towel.\""
+  },
+  {
+    "q": "\"How to revive wilted vegetables?\"",
+    "a": "\"Soak them in ice-cold water for 15-30 minutes to make them crisp again.\""
+  },
+  {
+    "q": "\"How to stop boiling water overflowing?\"",
+    "a": "\"Place a wooden spoon across the top of the pot. It pops the bubbles!\""
+  },
+  {
+    "q": "\"How to cook pasta correctly?\"",
+    "a": "\"Always salt the water like the sea. Don't add oil to the water, or sauce won't stick.\""
+  },
+  {
+    "q": "\"How to get more juice from limes?\"",
+    "a": "\"Roll the lime firmly on the counter with your palm before cutting it.\""
+  },
+  {
+    "q": "\"How to sharpen a knife without a stone?\"",
+    "a": "\"In a pinch, use the rough unglazed bottom ring of a ceramic mug.\""
+  },
+  {
+    "q": "\"How to separate egg yolks?\"",
+    "a": "\"Crack the egg into your hand and let the white slip through your fingers.\""
+  },
+  {
+    "q": "\"How to prevent apples from browning?\"",
+    "a": "\"Toss the cut apple slices in a little lemon juice or salt water.\""
+  },
+  {
+    "q": "\"Best way to cook rice?\"",
+    "a": "\"For white rice, use a 1:2 ratio (rice:water). For red rice, use 1:2.5.\""
+  },
+  {
+    "q": "\"How to store tomatoes?\"",
+    "a": "\"Keep them at room temperature. Refrigerating them makes them mealy and kills flavor.\""
+  },
+  {
+    "q": "\"How to make crispy fried food?\"",
+    "a": "\"Make sure the oil is hot enough and don't overcrowd the pan.\""
+  },
+  {
+    "q": "\"How to quickly ripen avocados?\"",
+    "a": "\"Place them in a paper bag with a banana or apple.\""
+  },
+  {
+    "q": "\"How to remove eggshell pieces?\"",
+    "a": "\"Use a larger piece of eggshell to scoop out the small fragment. It acts like a magnet.\""
+  },
+  {
+    "q": "\"How to thicken a sauce?\"",
+    "a": "\"Mix cornstarch with a little cold water (slurry) and stir it into the boiling sauce.\""
+  },
+  {
+    "q": "\"How to prevent butter burning?\"",
+    "a": "\"Add a splash of vegetable oil to the pan along with the butter.\""
+  },
+  {
+    "q": "\"How to make fluffy scrambled eggs?\"",
+    "a": "\"Add a splash of milk or water and whisk vigorously before cooking.\""
+  },
+  {
+    "q": "\"How to roast vegetables evenly?\"",
+    "a": "\"Cut them into same-sized pieces and don't overcrowd the baking sheet.\""
+  },
+  {
+    "q": "\"How to tell if an egg is bad?\"",
+    "a": "\"Place it in water. If it sinks, it's good. If it floats, throw it away.\""
+  },
+  {
+    "q": "\"How to grate soft cheese?\"",
+    "a": "\"Freeze the cheese for 15 minutes before grating to prevent it from clumping.\""
+  },
+  {
+    "q": "\"How to clean a cast iron skillet?\"",
+    "a": "\"Scrub with coarse salt and oil. Avoid soap if possible and never soak it.\""
+  },
+  {
+    "q": "\"Substitute for buttermilk?\"",
+    "a": "\"Add 1 tablespoon of vinegar or lemon juice to 1 cup of milk. Let stand for 5 minutes.\""
+  },
+  {
+    "q": "\"Substitute for eggs in baking?\"",
+    "a": "\"Use 1/2 mashed banana or 1/4 cup applesauce per egg.\""
+  },
+  {
+    "q": "\"Substitute for breadcrumbs?\"",
+    "a": "\"Crush crackers, oats, or cornflakes in a blender.\""
+  },
+  {
+    "q": "\"Substitute for brown sugar?\"",
+    "a": "\"Mix 1 cup white sugar with 1 tablespoon molasses.\""
+  },
+  {
+    "q": "\"Substitute for heavy cream?\"",
+    "a": "\"Mix 3/4 cup milk with 1/4 cup melted butter.\""
+  },
+  {
+    "q": "\"Substitute for baking powder?\"",
+    "a": "\"Mix 1/4 tsp baking soda with 1/2 tsp cream of tartar.\""
+  },
+  {
+    "q": "\"Substitute for soy sauce?\"",
+    "a": "\"Mix worcestershire sauce with a little water, or use Tamari.\""
+  },
+  {
+    "q": "\"Substitute for lemon juice?\"",
+    "a": "\"Use vinegar (half the amount) or lime juice.\""
+  },
+  {
+    "q": "\"Substitute for cornstarch?\"",
+    "a": "\"Use double the amount of all-purpose flour.\""
+  },
+  {
+    "q": "\"Substitute for mayonnaise?\"",
+    "a": "\"Use greek yogurt or mashed avocado for a healthier option.\""
+  },
+  {
+    "q": "\"Substitute for tomato paste?\"",
+    "a": "\"Cook down tomato sauce or puree until thick.\""
+  },
+  {
+    "q": "\"Substitute for garlic?\"",
+    "a": "\"Use 1/8 tsp garlic powder for every clove.\""
+  },
+  {
+    "q": "\"Substitute for fresh ginger?\"",
+    "a": "\"Use 1/4 tsp ground ginger for every 1 tsp fresh ginger.\""
+  },
+  {
+    "q": "\"What is Goraka?\"",
+    "a": "\"A sour dried fruit used in fish curries. It helps preserve the dish and adds a unique tang.\""
+  },
+  {
+    "q": "\"What is Maldive Fish?\"",
+    "a": "\"Cured tuna fish (Umbalakada) used to add umami and thickness to Sri Lankan sambols and curries.\""
+  },
+  {
+    "q": "\"Difference between Roasted and Raw Curry Powder?\"",
+    "a": "\"Roasted is for meats (dark curries). Raw is for vegetables (yellow curries).\""
+  },
+  {
+    "q": "\"How to extract thick coconut milk?\"",
+    "a": "\"Blend scraped coconut with a little warm water and squeeze. This first press is 'Miti Kiri'.\""
+  },
+  {
+    "q": "\"What is Rampe?\"",
+    "a": "\"Pandan leaves. They add a fragrant aroma to rice and curries.\""
+  },
+  {
+    "q": "\"What is the difference between Samba and Nadu?\"",
+    "a": "\"Samba is a short grain (pear), harder texture. Nadu is a longer grain, often healthier.\""
+  },
+  {
+    "q": "\"How to clean Lotus Root (Nelum Ala)?\"",
+    "a": "\"Scrape the outer skin, slice thinly, and wash thoroughly to remove mud from the holes.\""
+  },
+  {
+    "q": "\"How to use Curry Leaves?\"",
+    "a": "\"Fry them in oil at the start of cooking (tempering) to release the best aroma.\""
+  },
+  {
+    "q": "\"What is Kithul Treacle?\"",
+    "a": "\"A natural syrup made from the sap of the Kithul palm, used with curd (meekiri).\""
+  },
+  {
+    "q": "\"How to cook Dhal perfectly?\"",
+    "a": "\"Soak dhal for 20 mins. Cook with turmeric. Add coconut milk only after the dhal is soft.\""
+  },
+  {
+    "q": "\"What is 'Tempering' (Thel Dala)?\"",
+    "a": "\"Cooking spices, onions, and herbs in hot oil before adding other ingredients or as a garnish.\""
+  },
+  {
+    "q": "\"How to make Pol Sambol?\"",
+    "a": "\"Grind chili, onion, salt, and maldive fish. Mix with fresh grated coconut and lime.\""
+  },
+  {
+    "q": "\"What is Wambatu Moju?\"",
+    "a": "\"A sweet and sour eggplant pickle, a staple at Sri Lankan weddings.\""
+  },
+  {
+    "q": "\"How to keep cut Ash Plantain (Alu Kesel) white?\"",
+    "a": "\"Soak the cut pieces in water mixed with a little turmeric and lime.\""
+  },
+  {
+    "q": "\"Best rice for Fried Rice?\"",
+    "a": "\"Basmati or cold leftover Samba rice works best as the grains don't stick.\""
+  },
+  {
+    "q": "\"My AI Chef isn't loading.\"",
+    "a": "\"Check your internet connection. If the issue persists, try the 'Reload App' button in Help.\""
+  },
+  {
+    "q": "\"My predictions seem wrong.\"",
+    "a": "\"The AI needs about 3-7 days of usage history to become accurate. Keep logging your meals!\""
+  },
+  {
+    "q": "\"The camera screen is black.\"",
+    "a": "\"Ensure you have given the browser permission to access your camera.\""
+  },
+  {
+    "q": "\"I can't hear voice responses.\"",
+    "a": "\"Check your device volume. Note that voice output is currently a beta feature.\""
+  },
+  {
+    "q": "\"The app is slow.\"",
+    "a": "\"Go to Settings and click 'Clear Logs' or perform a 'Factory Reset' if it's very laggy.\""
+  },
+  {
+    "q": "\"Did you know?\"",
+    "a": "\"Honey is the only food that never spoils. Archaeologists found edible honey in ancient Egyptian tombs.\""
+  },
+  {
+    "q": "\"Did you know?\"",
+    "a": "\"Peanuts are not nuts, they are legumes (like beans and lentils).\""
+  },
+  {
+    "q": "\"Did you know?\"",
+    "a": "\"White chocolate isn't actually chocolate; it's made from cocoa butter, sugar, and milk.\""
+  },
+  {
+    "q": "\"Did you know?\"",
+    "a": "\"Cranberries bounce when they are ripe!\""
+  },
+  {
+    "q": "\"Did you know?\"",
+    "a": "\"Bananas are berries, but strawberries are not!\""
+  },
+  {
+    "q": "\"Did you know?\"",
+    "a": "\"Potatoes were the first food to be grown in space.\""
+  },
+  {
+    "q": "\"How do I set a monthly budget?\"",
+    "a": "\"Go to Analytics or Settings, tap 'Setup Family Details', and enter your Target Monthly Budget in LKR.\""
+  },
+  {
+    "q": "\"Can I export my meal plan?\"",
+    "a": "\"Yes, in the Meal Plan modal, click the 'PDF' button to download a printable weekly plan.\""
+  },
+  {
+    "q": "\"How does the 'Manual Entry' work?\"",
+    "a": "\"It allows you to log meals that aren't in your saved recipes. You type the meal name and manually select ingredients to deduct.\""
+  },
+  {
+    "q": "\"What formats does the AI Chef accept?\"",
+    "a": "\"You can upload images (JPG, PNG), PDFs, or text files. You can also paste a direct web link.\""
+  },
+  {
+    "q": "\"How do I delete a shopping list item?\"",
+    "a": "\"Swipe left or click the trash icon next to the item in the Shopping List tab.\""
+  },
+  {
+    "q": "\"Can I clear my entire shopping list?\"",
+    "a": "\"Yes, there is a 'Clear' button at the top of the Shopping List to remove all items at once.\""
+  },
+  {
+    "q": "\"Does the app support dark mode?\"",
+    "a": "\"Yes! Go to Settings > Appearance and toggle the switch to enable Dark Mode.\""
+  },
+  {
+    "q": "\"How do I update my family size?\"",
+    "a": "\"Go to the Analytics tab and click 'Edit' next to the Family Size section.\""
+  },
+  {
+    "q": "\"What is the 'Quick Menu'?\"",
+    "a": "\"It's the central '+' button on mobile that gives you fast access to Scan, Add Stock, and Log Meals.\""
+  },
+  {
+    "q": "\"How do I share my shopping list?\"",
+    "a": "\"Currently, you can take a screenshot or copy the text. A direct 'Share' feature is coming in V8.0.\""
+  },
+  {
+    "q": "\"Why isn't the voice search working?\"",
+    "a": "\"Ensure your browser has microphone permissions allowed. It works best on Chrome and Safari.\""
+  },
+  {
+    "q": "\"Can I use the app on my computer?\"",
+    "a": "\"Yes, Kitchen AI is a web app (PWA). You can open it in any browser on your laptop or desktop.\""
+  },
+  {
+    "q": "\"How do I reset the app to factory settings?\"",
+    "a": "\"Go to Settings > Data Management and tap 'Factory Reset'. Warning: This deletes all data!\""
+  },
+  {
+    "q": "\"How do I save my data before resetting?\"",
+    "a": "\"Go to Settings and click 'Export Data (Backup)' to download a safe copy of your inventory.\""
+  },
+  {
+    "q": "\"What does 'Sync Prices' do?\"",
+    "a": "\"It connects to a simulated market database to update the prices of common vegetables and essentials.\""
+  },
+  {
+    "q": "\"Can I add custom items to the market?\"",
+    "a": "\"Yes, go to the Market tab and click 'New Item' to add something that isn't in the default catalog.\""
+  },
+  {
+    "q": "\"How does the app predict what I need?\"",
+    "a": "\"It calculates your daily usage based on your family size and cooking history to forecast shortages.\""
+  },
+  {
+    "q": "\"What is 'Cook Mode' for?\"",
+    "a": "\"It provides a large-text, always-on screen interface for following recipes while your hands are busy.\""
+  },
+  {
+    "q": "\"Can I undo a stock deduction?\"",
+    "a": "\"Not directly. You will need to manually go to Inventory and add the quantity back.\""
+  },
+  {
+    "q": "\"How do I find low stock items?\"",
+    "a": "\"Go to the Dashboard. The 'Low Stock' card shows a count and clicking it filters your inventory.\""
+  },
+  {
+    "q": "\"Can I change the currency?\"",
+    "a": "\"Currently, the app is optimized for LKR (Sri Lankan Rupees). Future versions may support multi-currency.\""
+  },
+  {
+    "q": "\"How do I log leftovers?\"",
+    "a": "\"You can't log leftovers specifically yet, but you can manually adjust your stock up if you didn't use everything.\""
+  },
+  {
+    "q": "\"What happens if I accidentally delete an item?\"",
+    "a": "\"If you haven't backed up, it's gone. Always export your data regularly!\""
+  },
+  {
+    "q": "\"Does the app track calories?\"",
+    "a": "\"The Meal Planner provides an estimated calorie count, but it is an approximation, not medical advice.\""
+  },
+  {
+    "q": "\"How do I change the app language?\"",
+    "a": "\"Go to Settings > Language and select either English or Sinhala.\""
+  },
+  {
+    "q": "\"Why are my notifications not showing?\"",
+    "a": "\"Check your device settings to ensure notifications are allowed for your browser.\""
+  },
+  {
+    "q": "\"Can I add a photo to my inventory item?\"",
+    "a": "\"Not yet. The app uses a built-in library of icons for performance, but custom photos are planned.\""
+  },
+  {
+    "q": "\"How do I report a bug?\"",
+    "a": "\"There is no direct button, but you can check the 'Help' tab for troubleshooting steps.\""
+  },
+  {
+    "q": "\"What is the 'Knowledge Graph'?\"",
+    "a": "\"It is the brain of the AI that stores connections between ingredients, recipes, and your usage habits.\""
+  },
+  {
+    "q": "\"Can I use this app for a restaurant?\"",
+    "a": "\"It is designed for home use, but small cafes could use it for basic stock tracking.\""
+  },
+  {
+    "q": "\"How does the recipe converter work?\"",
+    "a": "\"It uses AI to read text or files and extracts ingredients and steps into a structured format.\""
+  },
+  {
+    "q": "\"Why did the AI misunderstand my recipe?\"",
+    "a": "\"AI isn't perfect! Try pasting clear, plain text or a direct link for better results.\""
+  },
+  {
+    "q": "\"How do I view my cooking history?\"",
+    "a": "\"Go to the Analytics tab and scroll down to the 'Cooking Log' section.\""
+  },
+  {
+    "q": "\"Can I sort my inventory?\"",
+    "a": "\"The inventory is automatically sorted by category. You can use the search bar to find specific items.\""
+  },
+  {
+    "q": "\"What does the 'Live' tag mean on the dashboard?\"",
+    "a": "\"It indicates that the Recent Activity section is updating in real-time as you cook.\""
+  },
+  {
+    "q": "\"How do I add a new category?\"",
+    "a": "\"Categories are currently fixed to standard groups (Veg, Meat, etc.) to keep the AI predictions accurate.\""
+  },
+  {
+    "q": "\"Does the app work on iPhone?\"",
+    "a": "\"Yes, you can even add it to your Home Screen via Safari's 'Share > Add to Home Screen' option.\""
+  },
+  {
+    "q": "\"How much space does the app use?\"",
+    "a": "\"Very little! Since it's a web app, it uses less storage than a standard photo.\""
+  },
+  {
+    "q": "\"Can I edit a recipe after saving?\"",
+    "a": "\"No, you would need to delete it and re-import or re-type it. Editing is coming soon.\""
+  },
+  {
+    "q": "\"What is 'Vector Similarity'?\"",
+    "a": "\"It's the math the AI uses to suggest recipes based on ingredients you already have.\""
+  },
+  {
+    "q": "\"How do I update the app?\"",
+    "a": "\"Since it's a web app, just refresh the page! New features will load automatically.\""
+  },
+  {
+    "q": "\"Why is the 'Market' tab empty?\"",
+    "a": "\"If it's empty, try clicking 'Sync Prices' in Settings to load the default data.\""
+  },
+  {
+    "q": "\"Can I use voice to navigate?\"",
+    "a": "\"Yes, try saying 'Go to Inventory' or 'Open Settings' when the microphone is active.\""
+  },
+  {
+    "q": "\"How do I turn off sound effects?\"",
+    "a": "\"The app is currently silent by default, except for voice responses.\""
+  },
+  {
+    "q": "\"What is 'Linear Regression' in the app?\"",
+    "a": "\"It's the algorithm used to predict your future budget based on past spending.\""
+  },
+  {
+    "q": "\"Can I log a snack?\"",
+    "a": "\"Yes, use 'Manual Entry' in the Cook tab and select 'Snack' as the meal type.\""
+  },
+  {
+    "q": "\"How do I add decimal quantities?\"",
+    "a": "\"The quantity fields support decimals. You can add '0.5' kg (which is 500g).\""
+  },
+  {
+    "q": "\"What if I buy a 'bundle' of something?\"",
+    "a": "\"Select 'bundle' or 'pack' as the unit when adding the item.\""
+  },
+  {
+    "q": "\"Hi\"",
+    "a": "\"Hey! Ready to cook?\""
+  },
+  {
+    "q": "\"Hello\"",
+    "a": "\"Hi! What's on the menu?\""
+  },
+  {
+    "q": "\"Hru\"",
+    "a": "\"I'm great! How r u?\""
+  },
+  {
+    "q": "\"How r u\"",
+    "a": "\"Doing good, ready to help!\""
+  },
+  {
+    "q": "\"Wru\"",
+    "a": "\"I'm right here in your pocket!\""
+  },
+  {
+    "q": "\"Wud\"",
+    "a": "\"Just waiting for you. Want to cook?\""
+  },
+  {
+    "q": "\"Wyd\"",
+    "a": "\"Organizing your kitchen data. You?\""
+  },
+  {
+    "q": "\"Sup\"",
+    "a": "\"Not much! Need a recipe?\""
+  },
+  {
+    "q": "\"Yo\"",
+    "a": "\"Yo! What's up?\""
+  },
+  {
+    "q": "\"GM\"",
+    "a": "\"Good morning! Hope you're hungry.\""
+  },
+  {
+    "q": "\"GN\"",
+    "a": "\"Good night! See you tomorrow.\""
+  },
+  {
+    "q": "\"Thx\"",
+    "a": "\"Anytime! Happy to help.\""
+  },
+  {
+    "q": "\"Ty\"",
+    "a": "\"You're welcome!\""
+  },
+  {
+    "q": "\"Thanks\"",
+    "a": "\"No problem at all!\""
+  },
+  {
+    "q": "\"K\"",
+    "a": "\"Got it!\""
+  },
+  {
+    "q": "\"Ok\"",
+    "a": "\"Okay, standing by.\""
+  },
+  {
+    "q": "\"Okk\"",
+    "a": "\"Understood!\""
+  },
+  {
+    "q": "\"kk\"",
+    "a": "\"Cool, cool.\""
+  },
+  {
+    "q": "\"Nice\"",
+    "a": "\"Glad you like it!\""
+  },
+  {
+    "q": "\"Great\"",
+    "a": "\"Awesome! What's next?\""
+  },
+  {
+    "q": "\"Cool\"",
+    "a": "\"IKR? I love being helpful.\""
+  },
+  {
+    "q": "\"Wow\"",
+    "a": "\"I know, right?\""
+  },
+  {
+    "q": "\"Haha\"",
+    "a": "\"Glad I could make u laugh!\""
+  },
+  {
+    "q": "\"Lol\"",
+    "a": "\"Haha! Good one.\""
+  },
+  {
+    "q": "\"Lmao\"",
+    "a": "\"I'm glad you find that funny!\""
+  },
+  {
+    "q": "\"Hungry\"",
+    "a": "\"Let's find food! Check the Inventory.\""
+  },
+  {
+    "q": "\"Starving\"",
+    "a": "\"Quick! Ask me for a 10-min recipe.\""
+  },
+  {
+    "q": "\"Help\"",
+    "a": "\"I'm here! What do you need?\""
+  },
+  {
+    "q": "\"SOS\"",
+    "a": "\"I'm here! Need a recipe or stock help?\""
+  },
+  {
+    "q": "\"Wait\"",
+    "a": "\"No worries, I'm waiting.\""
+  },
+  {
+    "q": "\"Sec\"",
+    "a": "\"Sure, take your time.\""
+  },
+  {
+    "q": "\"Done\"",
+    "a": "\"Great! What's the next step?\""
+  },
+  {
+    "q": "\"Yes\"",
+    "a": "\"Perfect. Let's go.\""
+  },
+  {
+    "q": "\"No\"",
+    "a": "\"No problem. I'll stop.\""
+  },
+  {
+    "q": "\"Nope\"",
+    "a": "\"Understood. Let's try something else.\""
+  },
+  {
+    "q": "\"Maybe\"",
+    "a": "\"Take your time to decide!\""
+  },
+  {
+    "q": "\"I'm back\"",
+    "a": "\"Welcome back! Ready to start?\""
+  },
+  {
+    "q": "\"Tired\"",
+    "a": "\"Take it easy. Try a simple meal today.\""
+  },
+  {
+    "q": "\"Busy\"",
+    "a": "\"I'll be here when you're free!\""
+  },
+  {
+    "q": "\"Bye\"",
+    "a": "\"See ya! Don't forget to log your meal.\""
+  },
+  {
+    "q": "\"Gtg\"",
+    "a": "\"Bye! See you later.\""
+  },
+  {
+    "q": "\"Ttyl\"",
+    "a": "\"Talk to you later! Happy cooking.\""
+  },
+  {
+    "q": "\"Cya\"",
+    "a": "\"See you! Enjoy your day.\""
+  },
+  {
+    "q": "\"What's good?\"",
+    "a": "\"Everything! Want a random recipe?\""
+  },
+  {
+    "q": "\"Any ideas?\"",
+    "a": "\"How about some Dhal or a quick stir-fry?\""
+  },
+  {
+    "q": "\"I'm bored\"",
+    "a": "\"Let's bake! Check if you have flour.\""
+  },
+  {
+    "q": "\"You sure?\"",
+    "a": "\"100%! My data is solid.\""
+  },
+  {
+    "q": "\"Really?\"",
+    "a": "\"Yup! Trust the AI.\""
+  },
+  {
+    "q": "\"For real?\"",
+    "a": "\"Absolutely. I've got your back.\""
+  },
+  {
+    "q": "\"Tasty\"",
+    "a": "\"Mmm! I can almost smell it.\""
+  },
+  {
+    "q": "\"Yum\"",
+    "a": "\"Glad it turned out well!\""
+  },
+  {
+    "q": "\"Delicious\"",
+    "a": "\"Awesome! Save the recipe for next time.\""
+  },
+  {
+    "q": "\"I messed up\"",
+    "a": "\"It's okay! Even top chefs make mistakes.\""
+  },
+  {
+    "q": "\"Burnt it\"",
+    "a": "\"Oh no! Can we save it with some sauce?\""
+  },
+  {
+    "q": "\"Too salty\"",
+    "a": "\"Add a potato! It absorbs the salt.\""
+  },
+  {
+    "q": "\"Too spicy\"",
+    "a": "\"Add some coconut milk or sugar!\""
+  },
+  {
+    "q": "\"Ur smart\"",
+    "a": "\"Thanks! I try my best.\""
+  },
+  {
+    "q": "\"Ur the best\"",
+    "a": "\"Aww, thanks! You're a great cook.\""
+  },
+  {
+    "q": "\"Ur helpful\"",
+    "a": "\"That's what I'm here for!\""
+  },
+  {
+    "q": "\"Love u\"",
+    "a": "\"Aww! Love helping you out too.\""
+  },
+  {
+    "q": "\"Xoxo\"",
+    "a": "\"Haha! Stay sweet.\""
+  },
+  {
+    "q": "\"Who r u?\"",
+    "a": "\"I'm your Smart Kitchen AI!\""
+  },
+  {
+    "q": "\"What u do?\"",
+    "a": "\"I track your food and find recipes.\""
+  },
+  {
+    "q": "\"Tell me more\"",
+    "a": "\"I can predict your budget and scan bills too!\""
+  },
+  {
+    "q": "\"Show me\"",
+    "a": "\"Go to the Dashboard to see your stats.\""
+  },
+  {
+    "q": "\"Add rice\"",
+    "a": "\"Adding 1kg Rice to your list now.\""
+  },
+  {
+    "q": "\"Check dhal\"",
+    "a": "\"Checking... You have 500g left.\""
+  },
+  {
+    "q": "\"Price check\"",
+    "a": "\"Prices are updated! Check the Market tab.\""
+  },
+  {
+    "q": "\"Budget?\"",
+    "a": "\"You've spent about 60% of your budget.\""
+  },
+  {
+    "q": "\"Out of milk\"",
+    "a": "\"Adding milk to your shopping list!\""
+  },
+  {
+    "q": "\"Buy eggs\"",
+    "a": "\"Got it. Eggs added to the list.\""
+  },
+  {
+    "q": "\"Remind me\"",
+    "a": "\"Sure! I'll keep it in the Recent Activity.\""
+  },
+  {
+    "q": "\"How much?\"",
+    "a": "\"Check the Analytics tab for the total.\""
+  },
+  {
+    "q": "\"Where is it?\"",
+    "a": "\"Check the 'Vegetables' category.\""
+  },
+  {
+    "q": "\"Fix it\"",
+    "a": "\"Try refreshing the page or checking Settings.\""
+  },
+  {
+    "q": "\"Restart\"",
+    "a": "\"You can use Factory Reset in Settings.\""
+  },
+  {
+    "q": "\"Clear\"",
+    "a": "\"Clearing the list now.\""
+  },
+  {
+    "q": "\"Delete\"",
+    "a": "\"Item removed!\""
+  },
+  {
+    "q": "\"U ok?\"",
+    "a": "\"I'm running 100%! Ready to go.\""
+  },
+  {
+    "q": "\"Slow\"",
+    "a": "\"Try clearing your logs in Settings.\""
+  },
+  {
+    "q": "\"Help me cook\"",
+    "a": "\"Open the 'Cook' tab to start a recipe!\""
+  },
+  {
+    "q": "\"Healthy?\"",
+    "a": "\"Try a salad or grilled veg. Check recipes!\""
+  },
+  {
+    "q": "\"Cheap?\"",
+    "a": "\"Dhal and Rice is always a budget winner.\""
+  },
+  {
+    "q": "\"Quick?\"",
+    "a": "\"Try an omelette! Takes 5 mins.\""
+  },
+  {
+    "q": "\"Fancy?\"",
+    "a": "\"Let's try a Biryani or Pasta Carbonara.\""
+  },
+  {
+    "q": "\"Ayubowan\"",
+    "a": "\"Ayubowan! Ready for some rice and curry?\""
+  },
+  {
+    "q": "\"Kohomada\"",
+    "a": "\"Mama hondin! How are you?\""
+  },
+  {
+    "q": "\"Machan\"",
+    "a": "\"Hey machan! What's the plan?\""
+  },
+  {
+    "q": "\"Ela\"",
+    "a": "\"Ela kiri! Let's do it.\""
+  },
+  {
+    "q": "\"Sira?\"",
+    "a": "\"Sira! I've got the data right here.\""
+  },
+  {
+    "q": "\"Attatama?\"",
+    "a": "\"Yes, really! Check your inventory.\""
+  },
+  {
+    "q": "\"Adahask kiyanna\"",
+    "a": "\"Try making a Pol Sambol. Quick and easy!\""
+  },
+  {
+    "q": "\"Kamali\"",
+    "a": "\"Haha, let's make something simple then.\""
+  },
+  {
+    "q": "\"Badagini\"",
+    "a": "\"Let's cook! What ingredients do you have?\""
+  },
+  {
+    "q": "\"Kanna ona\"",
+    "a": "\"I can find a recipe for you in seconds!\""
+  },
+  {
+    "q": "\"Monawada thiyenne?\"",
+    "a": "\"Check your Inventory tab to see everything.\""
+  },
+  {
+    "q": "\"Hondai\"",
+    "a": "\"Great! Let me know if you need more.\""
+  },
+  {
+    "q": "\"Niyamai\"",
+    "a": "\"Glad you're happy with it!\""
+  },
+  {
+    "q": "\"Stuthiy\"",
+    "a": "\"Oyata stuthiy! (Thank you!)\""
+  },
+  {
+    "q": "\"Beh\"",
+    "a": "\"No problem, we can try later.\""
+  },
+  {
+    "q": "\"How do I cook a perfect Sri Lankan Dhal Curry?\"",
+    "a": "\"🥘 **Classic Parippu (Dhal) Curry Guide:** \\n1. **Wash:** Rinse 1 cup of red lentils until the water runs clear. \\n2. **Boil:** Add lentils to a pot with 2 cups water, 1/2 tsp Turmeric, 1/2 chopped onion, and some curry leaves. Cook until soft. \\n3. **Milk:** Add 1 cup of thick coconut milk and salt to taste. Let it simmer on low heat. \\n4. **Tempering (Thel Dala):** In a separate small pan, heat 1 tbsp oil. Fry mustard seeds, dried chilies, and sliced shallots until golden. \\n5. **Combine:** Pour the hot oil mixture over the dhal. 🍛 Cover immediately to trap the aroma! Best served with hot rice or roast paan.\""
+  },
+  {
+    "q": "\"How to make a quick Pol Sambol?\"",
+    "a": "\"🥥 **Authentic Pol Sambol (Coconut Relish):** \\n- **Ingredients:** 1 cup fresh grated coconut, 2 tbsp chili flakes, 1 tsp salt, 1/2 red onion (minced), and 1 tbsp lime juice. \\n- **Step 1:** In a mortar and pestle (or bowl), grind the chili, salt, and onion into a paste. \\n- **Step 2:** Add the grated coconut and mix thoroughly until the coconut turns bright orange. 🌶️ \\n- **Step 3:** Squeeze in the lime juice to balance the heat. \\n- **Pro Tip:** Add a little bit of Maldive fish (Umbalakada) for that extra umami kick! 😋\""
+  },
+  {
+    "q": "\"What is the secret to fluffy Basmati Rice?\"",
+    "a": "\"🍚 **Fluffy Rice Every Time:** \\n1. **Soak:** Rinse the rice 3 times to remove starch, then soak in cold water for 20 mins. \\n2. **Ratio:** Use exactly 1.5 cups of water for every 1 cup of Basmati rice. \\n3. **Flavor:** Add 2 cardamom pods, a small piece of cinnamon, and a pinch of salt to the water. 🌿 \\n4. **The Boil:** Bring to a boil, then turn heat to the *absolute lowest* setting. Cover with a tight lid. \\n5. **Steam:** Cook for 12 mins, then turn off the heat but **DO NOT** open the lid for another 10 mins. Fluff with a fork and enjoy!\""
+  },
+  {
+    "q": "\"How do I make a Sri Lankan Chicken Curry?\"",
+    "a": "\"🍗 **Spicy Sri Lankan Chicken Curry:** \\n- **Marinate:** Mix 500g chicken with salt, pepper, turmeric, and 2 tbsp of Roasted Curry Powder. \\n- **Aromatics:** Heat oil, fry ginger-garlic paste, curry leaves, pandan leaf (rampe), and lemongrass. \\n- **Cook:** Add the chicken and cook until browned. Add 1/2 cup water and simmer until the meat is tender. \\n- **Finish:** Pour in 1/2 cup coconut milk and a squeeze of lime. 🍋 \\n- **Result:** A rich, dark, and spicy gravy perfect for string hoppers or rice!\""
+  },
+  {
+    "q": "\"How to fix a curry that is too spicy?\"",
+    "a": "\"🔥 **Too much chili? Don't panic!** \\n1. **Dairy/Coconut:** Add more coconut milk or a dollop of thick yogurt. The fat neutralizes the capsaicin. 🥥 \\n2. **Acid:** Squeeze in more lime juice or a teaspoon of vinegar. Acid cuts through the heat. 🍋 \\n3. **Sugar:** Add a pinch of sugar or kithul treacle to balance the flavors. \\n4. **Bulk it up:** Add more vegetables or a boiled potato to spread the spice across more volume. 🥔\""
+  },
+  {
+    "q": "\"What is the best way to store vegetables to keep them fresh?\"",
+    "a": "\"🥦 **Vegetable Storage 101:** \\n- **Leafy Greens:** Wrap in a damp paper towel and place in a zip-lock bag in the fridge. 🥬 \\n- **Carrots/Leeks:** Store in the crisper drawer. Keep carrots away from apples! \\n- **Potatoes/Onions:** Keep them in a cool, dark, dry place—but **never** store them together (onions make potatoes sprout faster). 🥔🧅 \\n- **Tomatoes:** Keep them on the counter! Cold temperatures make them lose flavor and become mealy.\""
+  },
+  {
+    "q": "\"How to make a perfect Omelette?\"",
+    "a": "\"🍳 **The 5-Minute Omelette:** \\n1. **Whisk:** Beat 2 eggs with a splash of milk, salt, and pepper until bubbly. \\n2. **Heat:** Melt 1 tsp butter in a non-stick pan over medium-high heat. \\n3. **Pour:** Once the butter sizzles, pour in the eggs. Use a spatula to push the cooked edges toward the center. \\n4. **Fill:** When the top looks slightly wet but mostly set, add cheese or chopped onions to one side. 🧀 \\n5. **Fold:** Fold it in half, slide onto a plate, and garnish with fresh herbs!\""
+  },
+  {
+    "q": "\"How to meal prep for the week using this app?\"",
+    "a": "\"📅 **Master Your Week with Meal Prep:** \\n1. **Inventory Check:** Look at your 'Low Stock' list in the app. \\n2. **Plan:** Use the 'Meal Plan' tab to assign recipes for Mon-Fri. 📝 \\n3. **Shopping:** Let the app generate your list and buy everything at once. \\n4. **Prep Day:** Spend 2 hours on Sunday chopping vegetables and marinating meats. 🔪 \\n5. **Store:** Use airtight containers. Now you can just 'Heat and Eat' during busy workdays! 🍱\""
+  },
+  {
+    "q": "\"How do I make Sri Lankan Wambatu Moju?\"",
+    "a": "\"🍆 **Sweet & Sour Eggplant Pickle (Moju):** \\n1. **Fry:** Cut eggplant into strips, deep-fry until golden brown and crispy. Do the same for a few green chilies. \\n2. **Paste:** Grind mustard seeds with vinegar, ginger, and garlic into a smooth paste. 🧪 \\n3. **Mix:** Heat a little vinegar with sugar and salt in a pot. Stir in the mustard paste. \\n4. **Combine:** Add the fried eggplant, fried chilies, and small red onions (shallots) into the mixture. \\n5. **Age:** It tastes even better the next day! 🍯\""
+  },
+  {
+    "q": "\"How to clean and season a cast iron pan?\"",
+    "a": "\"🍳 **Cast Iron Care Guide:** \\n- **Clean:** While the pan is warm, scrub with hot water and a stiff brush. Avoid soap if possible! 🧼 \\n- **Dry:** Dry it *immediately* on the stove over low heat to prevent rust. \\n- **Oil:** Rub a very thin layer of vegetable oil all over the surface (including the bottom). \\n- **Bake:** Place it upside down in a hot oven for 1 hour. This creates a natural non-stick 'seasoning'. ✨\""
+  },
+  {
+    "q": "\"How to make a healthy smoothie?\"",
+    "a": "\"🥤 **The Ultimate Green Glow Smoothie:** \\n- **Base:** 1 cup coconut water or almond milk. \\n- **Greens:** A handful of spinach or gotukola. 🍃 \\n- **Fruit:** 1 frozen banana and 1/2 cup mango or pineapple. \\n- **Boost:** Add a teaspoon of chia seeds or flax seeds. \\n- **Blend:** High speed until silky smooth. It's a breakfast in a glass! 🍌\""
+  },
+  {
+    "q": "\"What is the benefit of using 'Cook Mode' in the app?\"",
+    "a": "\"📱 **Why use Cook Mode?** \\n1. **Hands-Free:** The screen stays awake so you don't have to touch it with messy hands! 🙌 \\n2. **Large Text:** Easy to read from across the kitchen counter. \\n3. **Smart Deduct:** Once you finish, the app automatically subtracts the ingredients from your inventory. 📉 \\n4. **Focus:** It shows you one step at a time so you don't get overwhelmed. Happy Cooking! 👨‍🍳\""
+  },
+  {
+    "q": "\"How do I cook the perfect Sri Lankan Fish Ambul Thiyal?\"",
+    "a": "\"🐟 **Ambul Thiyal (Sour Fish Curry) Masterclass:** \\n- **The Fish:** Use firm tuna or skipjack (Balaya or Kelawalla). Cut into thick cubes. \\n- **The Key Ingredient:** Goraka (Garcinia). Soak 5-6 pieces of Goraka in warm water, then grind into a thick, smooth paste. This provides the sourness and preserves the fish. 🌑 \\n- **The Spice Paste:** Mix the Goraka paste with black pepper (lots of it!), salt, turmeric, and a bit of chili powder. \\n- **The Process:** Coat every piece of fish thoroughly in the paste. Arrange them in a clay pot (Metta Chatti) in a single layer if possible. 🥣 \\n- **The Cook:** Add a little water, curry leaves, and cinnamon. Simmer on low heat until the water evaporates and the spice paste clings to the fish like a dry crust. \\n- **Understanding:** This is a 'dry curry.' The acidity of the Goraka and the heat of the pepper act as natural preservatives, allowing the fish to stay fresh for days without refrigeration!\""
+  },
+  {
+    "q": "\"How can I make my Fried Rice taste like it's from a restaurant?\"",
+    "a": "\"🥡 **The Secrets to Restaurant-Style Fried Rice:** \\n1. **The Rice:** Use **COLD, day-old rice.** Freshly cooked rice is too wet and will turn into mush. Cold rice stays individual and firm. 🍚 \\n2. **The Pan:** Use a Wok on the highest heat possible. You want 'Wok Hei' (breath of the wok) – a slightly smoky charred flavor. 🔥 \\n3. **The Texture:** Sauté your veggies (carrots, leeks, garlic) quickly so they stay crunchy. \\n4. **The Sauce:** Don't just use Soy Sauce. Mix Soy Sauce with a dash of Sesame Oil, a pinch of sugar, and white pepper. 🧂 \\n5. **The Technique:** Push the rice to the side, scramble the egg in the center, then toss everything together rapidly. \\n- **Pro Tip:** A tiny bit of MSG or Mushroom powder provides that 'umami' flavor found in professional kitchens.\""
+  },
+  {
+    "q": "\"How do I balance flavors in any curry I cook?\"",
+    "a": "\"⚖️ **Understanding the 4 Pillars of Flavor:** \\nIf your curry feels 'missing something,' check these four elements: \\n1. **Salt:** If it tastes flat, add salt. It enhances all other flavors. 🧂 \\n2. **Acid:** If it's too heavy or greasy, add lime juice, vinegar, or tamarind. Acid 'brightens' the dish. 🍋 \\n3. **Sweet:** If it's too bitter or spicy, add a pinch of sugar or coconut milk. It rounds out the sharp edges. 🥥 \\n4. **Heat:** If it's boring, add fresh chilies or black pepper for depth. 🌶️ \\n- **The Tasting Rule:** Always taste your curry *at the end* of the cooking process. Flavors concentrate as water evaporates!\""
+  },
+  {
+    "q": "\"What is the best way to handle and cook Seafood?\"",
+    "a": "\"🍤 **Seafood Safety & Cooking Guide:** \\n- **Buying:** Fresh fish should have clear eyes, red gills, and smell like the ocean, not 'fishy.' 🌊 \\n- **Cleaning:** Always wash shrimp/prawns in cold water mixed with a little turmeric and salt to remove bacteria and odors. \\n- **Don't Overcook:** Seafood cooks in minutes! Prawns are done when they turn 'C' shaped. If they curl into an 'O', they are overcooked and rubbery. 🍤 \\n- **Thawing:** If using frozen fish from your inventory, thaw it in the fridge overnight. Never thaw in hot water, as it ruins the texture and breeds bacteria.\""
+  },
+  {
+    "q": "\"How do I make my own Sri Lankan Curry Powder at home?\"",
+    "a": "\"🌿 **Homemade Roasted Curry Powder (Badapu Thuna Paha):** \\n- **The Blend:** You need Coriander seeds (the base), Cumin seeds, and Fennel seeds. The ratio is usually 4:2:1. \\n- **The Aromatics:** Add dried chilies, curry leaves, a piece of cinnamon, and some cloves/cardamom. 🪵 \\n- **The Roast:** Heat a pan and toast each ingredient separately until they turn dark brown (but not black!). You should smell a deep, nutty aroma. 👃 \\n- **The Grind:** Once cooled, grind into a fine powder. \\n- **Why Homemade?** Store-bought powders lose their oils and scent over time. Freshly ground powder will make your meat curries 10x more flavorful! ✨\""
+  },
+  {
+    "q": "\"How do I prevent food waste using the Kitchen AI app?\"",
+    "a": "\"♻️ **Zero-Waste Kitchen Strategy:** \\n1. **Check Expiry:** Sort your Inventory by 'Expiry Date' in the app. Cook the items at the top first! 📅 \\n2. **Leftover Logic:** Have leftover rice? Use the app to find a 'Fried Rice' or 'Rice Pudding' recipe. \\n3. **Stem-to-Root:** Don't throw away coriander stems or leek greens; chop them fine and add to your tempering for extra flavor. 🥬 \\n4. **The 'Odds & Ends' Soup:** If you have small amounts of many veggies left, use the 'Manual Entry' log and make a 'Kitchen Sink' Vegetable soup. 🥣 \\n- **Benefit:** Reducing waste doesn't just help the planet; it saves you roughly 15-20% on your monthly budget!\""
+  },
+  {
+    "q": "\"How to achieve the perfect 'Tempering' (Thel Dala)?\"",
+    "a": "\"🔥 **The Art of Tempering (Thel Dala):** \\nTempering is the process of extracting essential oils from spices into hot fat. \\n1. **The Oil:** Use an oil with a high smoke point (Coconut or Vegetable oil). \\n2. **The Order:** Start with the 'hard' spices (Mustard seeds). Once they pop, add 'soft' aromatics (Onions, Ginger, Garlic, Curry Leaves). Add dried chilies last so they don't burn. 🌶️ \\n3. **The Sizzle:** The oil must be hot! You should hear a loud 'tshhh' sound when the spices hit the pan. \\n4. **The Pour:** Pour the sizzling oil and spices directly into your cooked dhal or curry. Cover the pot immediately for 2 minutes to let the aroma infuse into the food. 🍲\""
+  },
+  {
+    "q": "\"How do I cook Beef or Mutton so it is very tender?\"",
+    "a": "\"🥩 **Meat Tenderizing Techniques:** \\n- **The Cut:** Always cut meat *against the grain* (perpendicular to the muscle fibers). This makes it easier to chew. 🔪 \\n- **Natural Tenderizers:** Marinate your meat with grated raw papaya, pineapple juice, or yogurt for 30 minutes. The enzymes break down tough proteins. 🍍 \\n- **Slow & Low:** Tough meats need time. Simmer on low heat for 1-1.5 hours. High heat makes meat tough and dry. \\n- **The Rest:** Let the meat sit for 10 minutes after cooking before serving. This allows the juices to settle back into the meat. 🍖\""
+  },
+  {
+    "q": "\"How to use the 'Smart Shopping List' effectively?\"",
+    "a": "\"🛒 **Smart Shopping Guide:** \\n- **Auto-Fill:** The app tracks how fast your family eats. When an item hits the 'Red Zone' (Low Stock), it jumps to your shopping list automatically. 🚨 \\n- **Price Comparison:** Check the 'Market' tab before you leave. If leeks are expensive this week, swap your meal plan to use cabbage instead! 📉 \\n- **Sort by Aisle:** In the Shopping List tab, items are grouped by category (Veg, Dairy, Meat). This stops you from running back and forth in the supermarket. \\n- **Budget Tracking:** Enter your total at the end of the trip to see how your spending matches the AI's prediction. 💰\""
+  },
+  {
+    "q": "\"How do I make the perfect crispy Sri Lankan Hoppers (Appa)?\"",
+    "a": "\"🍳 **The Secret to Crispy, Lacy Hoppers:** \\n1. **The Batter:** Mix 2 cups of rice flour with 1/2 cup of thick coconut milk and a pinch of yeast. The secret? Add a tablespoon of cooked rice to the blender for a softer center! 🍚 \\n2. **Fermentation:** Let the batter sit for at least 6-8 hours. It should smell slightly sour and look bubbly. \\n3. **The Consistency:** Before cooking, add thin coconut milk until it's like heavy cream. Add a pinch of sugar to help the edges brown and get crispy. ✨ \\n4. **The Pan:** Use a seasoned 'Appa Chatti' (hopper pan). Swirl the batter quickly to coat the sides. \\n5. **The Steam:** Cover and cook for 2-3 mins. The edges should be golden brown and the center soft and bouncy. 🥥\""
+  },
+  {
+    "q": "\"How do I stop my onions from burning when frying?\"",
+    "a": "\"🧅 **The Onion Frying Science:** \\n- **Uniform Cuts:** If some pieces are thick and some are thin, the thin ones will burn before the thick ones cook. Use a sharp knife for even slices! 🔪 \\n- **Salt Early:** Adding a pinch of salt draws moisture out of the onions, helping them soften and brown evenly rather than frying instantly. \\n- **Don't Overcrowd:** If you put too many onions in a small pan, they will steam in their own juice instead of getting crispy. \\n- **Heat Control:** Start on medium-high to get them going, then drop to low once they turn translucent to reach that perfect golden 'caramelized' stage without bitterness. 🔥\""
+  },
+  {
+    "q": "\"How do I get the 'Red' color in my meat curries without too much spice?\"",
+    "a": "\"🎨 **Color Without the Heat:** \\n1. **Paprika vs. Chili:** Use Paprika or 'Kashmiri Chili' powder. These provide a deep red color but have very little heat compared to standard Sri Lankan chili powder. 🌶️ \\n2. **The Tomato Trick:** Adding a little tomato paste during the tempering stage creates a rich, red base. \\n3. **Slow Oil Separation:** Cook the curry until the oil separates and floats to the top (Thel mathu wenawa). This oil carries the pigment of the spices and makes the dish look vibrant. 🥘 \\n4. **Deep Roast:** Ensure your Roasted Curry Powder is a dark chocolate brown before adding it to the meat.\""
+  },
+  {
+    "q": "\"Why does my coconut milk curry 'curdle' or split?\"",
+    "a": "\"🥥 **Preventing Curdled Curries:** \\n- **The Heat Rule:** Never boil coconut milk on high heat. Boiling causes the proteins to separate from the fats, leading to a grainy look. 🥛 \\n- **The Stirring Secret:** Once you add the 'Miti Kiri' (thick milk), stir gently and constantly in one direction until it begins to simmer. \\n- **Add it Last:** Always add thick coconut milk at the very end of the cooking process. Turn off the heat shortly after it starts to bubble. \\n- **Acid Alert:** Don't add lime juice while the curry is boiling hot; wait for it to cool slightly so the acid doesn't curdle the milk. 🍋\""
+  },
+  {
+    "q": "\"How do I use the AI Assistant to save money?\"",
+    "a": "\"💰 **Money-Saving AI Tips:** \\n1. **Substitution Power:** If you're out of an expensive ingredient, ask me 'What is a substitute for...?' to use what you already have. \\n2. **Inventory Awareness:** Always check the 'Low Stock' red alerts before going to the shop. This prevents 'panic buying' items you already own. 🚨 \\n3. **Bulk Planning:** Use the app to find recipes that use the same ingredients (e.g., buying a big bag of onions and using them for Moju, Sambol, and Curry). \\n4. **Market Sync:** Use the 'Sync Prices' button to see if certain vegetables are cheaper this week and adjust your meal plan accordingly! 📉\""
+  },
+  {
+    "q": "\"How do I make my own Ginger-Garlic paste at home?\"",
+    "a": "\"🧄 **Fresh Ginger-Garlic Paste (GGP):** \\n- **The Ratio:** Use a 50:50 ratio of peeled ginger and garlic cloves. \\n- **The Blend:** Add a teaspoon of oil and a pinch of salt to the blender. The oil acts as a preservative and the salt helps grind it into a smooth paste. 🧪 \\n- **Storage:** Keep it in a glass jar in the fridge. It will stay fresh for 2-3 weeks. \\n- **Why do it?** Fresh paste has a much stronger, brighter flavor than store-bought versions and it's much cheaper! ✨\""
+  },
+  {
+    "q": "\"How to cook a healthy and green Gotukola Sambol?\"",
+    "a": "\"🌿 **The Ultimate Gotukola Sambol Guide:** \\n1. **The Cut:** Wash the Gotukola well and slice it as thinly as possible. Fine cuts release more flavor! 🔪 \\n2. **No Heat:** Never cook Gotukola. Heat destroys the vitamins and turns the leaves brown. \\n3. **The Balance:** Mix with fresh grated coconut, finely chopped red onions, green chilies, and salt. \\n4. **The Umami:** Add a little Maldive fish (Umbalakada) for a traditional savory taste. 🐟 \\n5. **The Lime:** Always add lime juice just before serving. It keeps the green color bright and helps your body absorb the iron in the leaves! 🍋\""
+  },
+  {
+    "q": "\"How do I troubleshoot a recipe that tastes 'flat'?\"",
+    "a": "\"👅 **The 'Flat Flavor' Checklist:** \\nIf your food tastes boring even with spices, check these: \\n- **Missing Salt:** Salt is a flavor amplifier. Try adding a tiny bit more. \\n- **Needs Acid:** A squeeze of lime or a drop of vinegar can 'wake up' a dull curry. 🍋 \\n- **Lack of Fat:** Fat carries flavor. Maybe add a splash more coconut milk or a teaspoon of ghee. \\n- **Not Enough Sautéing:** Next time, spend more time frying your onions and spices at the start (tempering) to build a deeper base. 🥘\""
+  },
+  {
+    "q": "\"What is the best way to clean my kitchen tools?\"",
+    "a": "\"🧽 **Pro Cleaning Tips:** \\n- **Wooden Spoons:** Never put them in the dishwasher! Hand wash and occasionally rub with food-grade oil to prevent cracking. 🪵 \\n- **Blender Smells:** Fill halfway with warm water and a drop of soap, then blend for 30 seconds to clean the blades safely. 🌪️ \\n- **Cutting Boards:** Use lemon and salt to scrub away stains and odors from plastic or wood boards. \\n- **Stainless Steel:** Use a vinegar-water mix to keep your pots and pans shining like new. ✨\""
+  },
+  {
+    "q": "\"How do I use the 'Manual Entry' feature for leftovers?\"",
+    "a": "\"🍱 **Managing Leftovers:** \\n1. **Log it:** After dinner, go to 'Cook Mode' > 'Manual Entry.' \\n2. **Deduct:** Select the meal you just ate so the app removes those ingredients from your stock. \\n3. **The Future:** If you have a large bowl of curry left over, don't delete it from your mind! Use it for breakfast with bread or string hoppers. \\n- **Why?** Accurate logging ensures your 'Smart Shopping List' knows you don't need to buy those ingredients again yet! ✅\""
+  },
+  {
+    "q": "\"How do I cook a traditional Sri Lankan Fish Curry (Kiri Malu)?\"",
+    "a": "\"🐟 **White Fish Curry (Kiri Malu) Guide** \\n\\n**Ingredients:** 500g firm white fish (Thalapath or Kelawalla), 1 cup thick coconut milk, 1/2 tsp turmeric, 1 tbsp fenugreek seeds, 2 green chilies, 1 onion, curry leaves, and lime. \\n\\n**Instructions:** \\n1. **Prep:** Wash fish with salt and turmeric to remove any smell. \\n2. **Simmer:** In a pot, combine fish, sliced onions, green chilies, fenugreek, turmeric, and 1/2 cup water. Cook until fish is firm. \\n3. **Cream:** Add the thick coconut milk and salt. Bring to a gentle simmer (do not boil hard or the milk will curdle). \\n4. **Finish:** Turn off heat and squeeze half a lime for a tangy finish. \\n\\n**Tip:** Use a clay pot for an authentic earthy flavor! 🥘\""
+  },
+  {
+    "q": "\"How to make Spicy Sri Lankan Devilled Chicken?\"",
+    "a": "\"🍗 **Spicy Devilled Chicken (Hotel Style)** \\n\\n**Ingredients:** 500g boneless chicken, 2 tbsp chili flakes, 2 tbsp tomato sauce, 1 tbsp soy sauce, 1 large onion (cubed), 2 tomatoes, 3 banana peppers (capsicum), ginger-garlic paste. \\n\\n**Instructions:** \\n1. **Fry:** Marinate chicken with salt/pepper and deep fry until golden. Set aside. \\n2. **Sauté:** In a wok, heat oil and fry ginger-garlic paste, onions, and banana peppers on high heat (keep them crunchy). \\n3. **Sauce:** Add chili flakes, tomato sauce, soy sauce, and a pinch of sugar. \\n4. **Toss:** Add the fried chicken and sliced tomatoes. Toss rapidly for 2 mins. \\n\\n**Tip:** Serve hot with Fried Rice or Paratha! 🔥\""
+  },
+  {
+    "q": "\"How do I prepare a perfect Creamy Garlic Pasta?\"",
+    "a": "\"🍝 **Quick Creamy Garlic Pasta** \\n\\n**Ingredients:** 250g Spaghetti or Fettuccine, 4 cloves garlic (minced), 1 cup heavy cream, 50g butter, 1/2 cup parmesan cheese, parsley. \\n\\n**Instructions:** \\n1. **Boil:** Cook pasta in salted water until 'al dente'. Save 1/2 cup of pasta water. \\n2. **Base:** Melt butter in a pan, sauté garlic until fragrant (don't burn it!). \\n3. **Cream:** Pour in heavy cream and simmer for 2 mins. \\n4. **Combine:** Add pasta, cheese, and a bit of pasta water. Stir until the sauce clings to the noodles. \\n\\n**Tip:** Add grilled shrimp or mushrooms for extra protein! 🧀\""
+  },
+  {
+    "q": "\"How to cook a traditional Sri Lankan Mutton Curry?\"",
+    "a": "\"🐐 **Rich Sri Lankan Mutton Curry** \\n\\n**Ingredients:** 500g mutton (small pieces), 3 tbsp Roasted Curry Powder, 1 tbsp chili powder, 1/2 cup vinegar, ginger, garlic, cardamom, cloves, cinnamon, thick coconut milk. \\n\\n**Instructions:** \\n1. **Marinate:** Mix mutton with vinegar, salt, and half the curry powder. Let sit for 30 mins. \\n2. **Aromatics:** Heat oil, fry onions, curry leaves, and crushed spices until fragrant. \\n3. **Slow Cook:** Add mutton and cook on low heat in its own juices for 20 mins. Add water if needed. \\n4. **Finish:** Once meat is tender, add coconut milk and the remaining curry powder. Simmer until the gravy is dark and thick. \\n\\n**Tip:** Mutton takes time; use a pressure cooker to save 40 mins! 🥩\""
+  },
+  {
+    "q": "\"How to make authentic Vegetable Fried Rice?\"",
+    "a": "\"🍚 **Vegetable Fried Rice (Chinese Style)** \\n\\n**Ingredients:** 3 cups cold cooked rice, 1 cup chopped carrots/beans/leeks, 2 eggs, 2 tbsp soy sauce, 1 tsp sesame oil, minced ginger. \\n\\n**Instructions:** \\n1. **Eggs:** Scramble eggs in a hot wok and set aside. \\n2. **Veggies:** Stir-fry vegetables with ginger on very high heat for 3 mins. \\n3. **Rice:** Add cold rice and break up any clumps. \\n4. **Season:** Pour soy sauce and sesame oil. Add eggs back in. Toss for 2 mins until the rice is 'toasted'. \\n\\n**Tip:** Never use freshly cooked rice or it will turn into a mash! 🥡\""
+  },
+  {
+    "q": "\"How to make Sri Lankan Egg Hoppers (Bitta Appa)?\"",
+    "a": "\"🍳 **Crispy Egg Hoppers Guide** \\n\\n**Ingredients:** Hopper batter (fermented rice flour & coconut milk), eggs, salt, pepper. \\n\\n**Instructions:** \\n1. **Heat:** Get your hopper pan (Appa Chatti) very hot and lightly oil it. \\n2. **Swirl:** Pour a ladle of batter and swirl to coat the edges. \\n3. **Egg:** Crack an egg into the center. Sprinkle salt and black pepper. \\n4. **Steam:** Cover with a lid and cook for 2-3 mins until the edges are brown and crispy. \\n\\n**Tip:** Use a needle or thin knife to gently lift the edges without breaking the hopper! 🥥\""
+  },
+  {
+    "q": "\"How do I make a healthy Red Lentil (Dhal) Soup?\"",
+    "a": "\"🥣 **Healthy Dhal & Spinach Soup** \\n\\n**Ingredients:** 1 cup red lentils, 1 onion, 2 cloves garlic, 1 tsp cumin seeds, a handful of spinach, 1 liter vegetable broth. \\n\\n**Instructions:** \\n1. **Sauté:** Fry cumin seeds, onion, and garlic in a pot. \\n2. **Boil:** Add lentils and broth. Simmer for 15-20 mins until lentils dissolve. \\n3. **Blend:** (Optional) Blend half the soup for a creamy texture. \\n4. **Greens:** Stir in fresh spinach at the end until wilted. \\n\\n**Tip:** A squeeze of lemon at the end makes this soup taste 5-star! 🍋\""
+  },
+  {
+    "q": "\"How to make traditional Sri Lankan Pol Roti?\"",
+    "a": "\"🫓 **Rustic Pol Roti (Coconut Flatbread)** \\n\\n**Ingredients:** 2 cups all-purpose flour, 1 cup freshly grated coconut, 1 small onion (chopped), 2 green chilies, salt, water. \\n\\n**Instructions:** \\n1. **Mix:** Combine flour, coconut, onions, and chilies in a bowl. \\n2. **Knead:** Add water slowly and knead into a firm, non-sticky dough. \\n3. **Shape:** Divide into balls and flatten them into discs with your palms. \\n4. **Cook:** Heat a flat griddle (thawa) and cook each side for 3-4 mins until golden brown spots appear. \\n\\n**Tip:** Best enjoyed with Lunu Miris or a spicy chicken curry! 🥥\""
+  },
+  {
+    "q": "\"How to cook a classic Beef Stew?\"",
+    "a": "\"🍲 **Hearty Beef & Potato Stew** \\n\\n**Ingredients:** 500g beef cubes, 2 potatoes (cubed), 1 carrot, 1 onion, 2 tbsp flour, 500ml beef stock, rosemary/thyme. \\n\\n**Instructions:** \\n1. **Sear:** Coat beef in flour and sear in a hot pot until brown. \\n2. **Deglaze:** Add onions and a splash of water to scrape the brown bits off the bottom. \\n3. **Simmer:** Add stock, carrots, and herbs. Cover and simmer on low for 1.5 hours. \\n4. **Vegetables:** Add potatoes in the last 30 mins so they don't get too mushy. \\n\\n**Tip:** The longer it cooks, the better it tastes! 🥩\""
+  },
+  {
+    "q": "\"How to make a quick Shrimp Scampi?\"",
+    "a": "\"🍤 **Garlic Butter Shrimp Scampi** \\n\\n**Ingredients:** 400g large prawns, 4 tbsp butter, 2 tbsp olive oil, 1/2 cup white juice or chicken stock, red pepper flakes, lemon juice, pasta or bread. \\n\\n**Instructions:** \\n1. **Sauté:** Heat oil/butter and fry garlic and red pepper flakes. \\n2. **Cook:** Add prawns and cook for only 2 mins per side (until pink). Remove prawns. \\n3. **Reduce:** Add stock and lemon juice to the pan, boil for 3 mins to thicken. \\n4. **Toss:** Add prawns back in and garnish with parsley. \\n\\n**Tip:** Do not overcook prawns or they will become rubbery! 🍋\""
+  },
+  {
+    "q": "\"How do I cook a traditional Sri Lankan Cashew Curry (Kaju Maluwa)?\"",
+    "a": "\"🥜 **Creamy Cashew Curry (Kaju Maluwa) Guide** \\n\\n**Ingredients:** 250g raw cashews (soaked for 2 hours), 1 cup thick coconut milk, 1/2 tsp turmeric, 1 tsp raw curry powder, green chilies, curry leaves, and a few green peas for color. \\n\\n**Instructions:** \\n1. **Prep:** Soak cashews in warm water to soften them. \\n2. **Simmer:** Place cashews in a pot with sliced onions, turmeric, curry powder, and enough water to cover. Cook until the cashews are tender. \\n3. **Cream:** Add the thick coconut milk and salt. Let it simmer on low heat for 5-8 mins. \\n4. **Finish:** Add green peas at the end for a pop of color. \\n\\n**Tip:** For a richer flavor, add a small piece of cinnamon during the boiling stage! 🥥\""
+  },
+  {
+    "q": "\"How to make a classic Sri Lankan Egg Curry?\"",
+    "a": "\"🥚 **Spicy Coconut Egg Curry** \\n\\n**Ingredients:** 4 hard-boiled eggs, 1 cup coconut milk, 1 tbsp chili powder, 1 tsp unroasted curry powder, onions, ginger-garlic paste, cinnamon, and tomatoes. \\n\\n**Instructions:** \\n1. **Fry:** Lightly fry the boiled eggs with a pinch of turmeric until the skin is golden. Set aside. \\n2. **Sauté:** Fry onions, ginger-garlic, curry leaves, and cinnamon. Add tomatoes and cook until soft. \\n3. **Spice:** Add chili powder and curry powder. Pour in coconut milk and bring to a simmer. \\n4. **Combine:** Add the eggs back in and simmer for 5 mins until the gravy thickens. \\n\\n**Tip:** Slit the sides of the eggs slightly so they absorb the spicy gravy! 🍛\""
+  },
+  {
+    "q": "\"How to make a healthy Avocado Toast?\"",
+    "a": "\"🥑 **The Ultimate Healthy Avocado Toast** \\n\\n**Ingredients:** 2 slices of whole-grain bread, 1 ripe avocado, red pepper flakes, lemon juice, salt, and an egg (optional). \\n\\n**Instructions:** \\n1. **Mash:** In a bowl, mash the avocado with a squeeze of lime/lemon, salt, and pepper. \\n2. **Toast:** Toast your bread until golden and crunchy. \\n3. **Spread:** Spread the avocado thick on the toast. \\n4. **Top:** Sprinkle red pepper flakes and top with a poached or fried egg. \\n\\n**Tip:** Rub a raw garlic clove on the warm toast before adding avocado for extra zing! 🍞\""
+  },
+  {
+    "q": "\"How do I cook a traditional Sri Lankan Jackfruit Curry (Kiri Kos)?\"",
+    "a": "\"🌳 **Creamy Jackfruit (Kiri Kos) Guide** \\n\\n**Ingredients:** 500g young jackfruit (cleaned), 1 cup thick coconut milk, 1 tsp turmeric, 1 tbsp mustard seeds (ground), 2 tbsp toasted rice flour (for thickening). \\n\\n**Instructions:** \\n1. **Boil:** Cook the jackfruit pieces with turmeric, onions, and curry leaves in thin coconut milk until soft. \\n2. **Mustard:** Stir in the ground mustard seeds and thick coconut milk. \\n3. **Thicken:** Mix rice flour with a little water and add to the pot to make the gravy rich and creamy. \\n4. **Temper:** Fry mustard seeds and curry leaves in a little oil and pour over the curry. \\n\\n**Tip:** Don't throw away the seeds (Kos Ata); they are delicious and full of protein! 🥣\""
+  },
+  {
+    "q": "\"How to make a quick Vegetable Stir-Fry?\"",
+    "a": "\"🥦 **10-Minute Rainbow Veggie Stir-Fry** \\n\\n**Ingredients:** Broccoli, bell peppers, carrots, snap peas, 2 tbsp soy sauce, 1 tbsp honey, minced garlic, and ginger. \\n\\n**Instructions:** \\n1. **Prep:** Cut all veggies into even sizes so they cook at the same time. \\n2. **Sear:** Heat oil in a wok until smoking. Add garlic and ginger. \\n3. **Flash Cook:** Add veggies and toss on high heat for 3-4 mins. They should be bright and crunchy. \\n4. **Glaze:** Add soy sauce and honey. Toss for 1 more minute. \\n\\n**Tip:** Add toasted sesame seeds on top for a professional finish! 🥢\""
+  },
+  {
+    "q": "\"How to make Sri Lankan Watalappam?\"",
+    "a": "\"🍮 **Traditional Sri Lankan Watalappam** \\n\\n**Ingredients:** 10 eggs, 500g Jaggery (grated), 2 cups thick coconut milk, 1 tsp nutmeg/cardamom powder, a pinch of salt. \\n\\n**Instructions:** \\n1. **Dissolve:** Melt the jaggery in the coconut milk over low heat. Let it cool. \\n2. **Whisk:** Beat the eggs well, then stir into the jaggery-milk mixture. Add the spices. \\n3. **Strain:** Strain the mixture through a cloth into a steaming bowl to remove bubbles. \\n4. **Steam:** Cover with foil and steam for 45-60 mins until firm. \\n\\n**Tip:** Add cashew nuts on top halfway through the steaming for a nice crunch! 🍯\""
+  },
+  {
+    "q": "\"How to cook a perfect Grilled Cheese Sandwich?\"",
+    "a": "\"🥪 **The Ultimate Gooey Grilled Cheese** \\n\\n**Ingredients:** 2 slices of bread, 2 slices of cheddar cheese, 1 tbsp butter, and a pinch of garlic powder. \\n\\n**Instructions:** \\n1. **Butter:** Butter the *outside* of both bread slices. \\n2. **Layer:** Place cheese between the unbuttered sides. \\n3. **Fry:** Place on a pan over medium-low heat. This is key—don't rush it! \\n4. **Gold:** Flip when the bottom is golden brown and the cheese starts to melt. \\n\\n**Tip:** Use a mix of Cheddar and Mozzarella for the perfect 'cheese pull'! 🧀\""
+  },
+  {
+    "q": "\"How to make a healthy Chickpea (Kadala) Salad?\"",
+    "a": "\"🥗 **Protein-Packed Chickpea Salad** \\n\\n**Ingredients:** 1 can of chickpeas (drained), cucumber, cherry tomatoes, red onion, parsley, olive oil, and lemon juice. \\n\\n**Instructions:** \\n1. **Chop:** Dice all the fresh vegetables into small cubes. \\n2. **Mix:** Combine chickpeas and veggies in a large bowl. \\n3. **Dress:** Whisk olive oil, lemon juice, salt, and pepper, then pour over the salad. \\n4. **Chill:** Let it sit for 10 mins so the chickpeas absorb the flavors. \\n\\n**Tip:** Add crumbled feta cheese for a Mediterranean twist! 🍋\""
+  },
+  {
+    "q": "\"How to make Sri Lankan Milk Rice (Kiribath)?\"",
+    "a": "\"🍚 **Traditional Kiribath (Milk Rice)** \\n\\n**Ingredients:** 2 cups white raw rice (Kekulu), 3 cups water, 2 cups thick coconut milk, salt. \\n\\n**Instructions:** \\n1. **Boil:** Cook the rice with water until it is very soft and the water is absorbed. \\n2. **Milk:** Stir in the coconut milk and salt. Cook on low heat while stirring until it becomes creamy and thick. \\n3. **Flatten:** Transfer to a flat plate and flatten the top with a banana leaf or plastic wrap. \\n4. **Cut:** Let it cool for 10 mins, then cut into diamond shapes. \\n\\n**Tip:** Serve with Lunu Miris or Seeni Sambol for the perfect breakfast! 🥥\""
+  },
+  {
+    "q": "\"How to make a homemade Pepperoni Pizza?\"",
+    "a": "\"🍕 **Simple Homemade Pizza Guide** \\n\\n**Ingredients:** Pizza dough, tomato sauce, mozzarella cheese, pepperoni slices, dried oregano. \\n\\n**Instructions:** \\n1. **Preheat:** Set your oven to the highest setting (usually 250°C). \\n2. **Stretch:** Roll out your dough on a floured surface. \\n3. **Topping:** Spread sauce, add a thick layer of cheese, and top with pepperoni. \\n4. **Bake:** Bake for 8-12 mins until the crust is charred and cheese is bubbling. \\n\\n**Tip:** Drizzle a little honey on top after baking for a sweet and spicy flavor! 🍯\""
+  },
+  {
+    "q": "\"How to cook a creamy Pumpkin Curry?\"",
+    "a": "\"🎃 **Sri Lankan Creamy Pumpkin Curry** \\n\\n**Ingredients:** 500g Pumpkin (cubed), 1 cup coconut milk, 1/2 tsp turmeric, 1 tsp unroasted curry powder, green chilies, and a bit of sugar. \\n\\n**Instructions:** \\n1. **Boil:** Cook pumpkin with turmeric, curry powder, and onions in 1/2 cup water until soft. \\n2. **Mash:** Lightly crush a few pumpkin cubes to thicken the gravy. \\n3. **Simmer:** Add coconut milk and a pinch of sugar to bring out the sweetness. Cook for 5 mins. \\n4. **Finish:** Add a sprinkle of black pepper on top. \\n\\n**Tip:** Do not overcook the pumpkin; it should be soft but hold its shape! 🥣\""
+  }
+]

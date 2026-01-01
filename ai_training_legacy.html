@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Developer Studio - Kitchen AI</title>
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>👨‍💻</text></svg>">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <style type="text/css">@font-face {font-family:Outfit;font-style:normal;font-weight:300;src:url(/cf-fonts/v/outfit/5.0.11/latin/wght/normal.woff2);unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:swap;}@font-face {font-family:Outfit;font-style:normal;font-weight:300;src:url(/cf-fonts/v/outfit/5.0.11/latin-ext/wght/normal.woff2);unicode-range:U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF;font-display:swap;}@font-face {font-family:Outfit;font-style:normal;font-weight:400;src:url(/cf-fonts/v/outfit/5.0.11/latin-ext/wght/normal.woff2);unicode-range:U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF;font-display:swap;}@font-face {font-family:Outfit;font-style:normal;font-weight:400;src:url(/cf-fonts/v/outfit/5.0.11/latin/wght/normal.woff2);unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:swap;}@font-face {font-family:Outfit;font-style:normal;font-weight:500;src:url(/cf-fonts/v/outfit/5.0.11/latin/wght/normal.woff2);unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:swap;}@font-face {font-family:Outfit;font-style:normal;font-weight:500;src:url(/cf-fonts/v/outfit/5.0.11/latin-ext/wght/normal.woff2);unicode-range:U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF;font-display:swap;}@font-face {font-family:Outfit;font-style:normal;font-weight:600;src:url(/cf-fonts/v/outfit/5.0.11/latin/wght/normal.woff2);unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:swap;}@font-face {font-family:Outfit;font-style:normal;font-weight:600;src:url(/cf-fonts/v/outfit/5.0.11/latin-ext/wght/normal.woff2);unicode-range:U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF;font-display:swap;}@font-face {font-family:Outfit;font-style:normal;font-weight:700;src:url(/cf-fonts/v/outfit/5.0.11/latin/wght/normal.woff2);unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:swap;}@font-face {font-family:Outfit;font-style:normal;font-weight:700;src:url(/cf-fonts/v/outfit/5.0.11/latin-ext/wght/normal.woff2);unicode-range:U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF;font-display:swap;}@font-face {font-family:JetBrains Mono;font-style:normal;font-weight:400;src:url(/cf-fonts/v/jetbrains-mono/5.0.18/vietnamese/wght/normal.woff2);unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB;font-display:swap;}@font-face {font-family:JetBrains Mono;font-style:normal;font-weight:400;src:url(/cf-fonts/v/jetbrains-mono/5.0.18/greek/wght/normal.woff2);unicode-range:U+0370-03FF;font-display:swap;}@font-face {font-family:JetBrains Mono;font-style:normal;font-weight:400;src:url(/cf-fonts/v/jetbrains-mono/5.0.18/latin/wght/normal.woff2);unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:swap;}@font-face {font-family:JetBrains Mono;font-style:normal;font-weight:400;src:url(/cf-fonts/v/jetbrains-mono/5.0.18/latin-ext/wght/normal.woff2);unicode-range:U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF;font-display:swap;}@font-face {font-family:JetBrains Mono;font-style:normal;font-weight:400;src:url(/cf-fonts/v/jetbrains-mono/5.0.18/cyrillic/wght/normal.woff2);unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;font-display:swap;}@font-face {font-family:JetBrains Mono;font-style:normal;font-weight:400;src:url(/cf-fonts/v/jetbrains-mono/5.0.18/cyrillic-ext/wght/normal.woff2);unicode-range:U+0460-052F,U+1C80-1C88,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F;font-display:swap;}@font-face {font-family:JetBrains Mono;font-style:normal;font-weight:700;src:url(/cf-fonts/v/jetbrains-mono/5.0.18/cyrillic-ext/wght/normal.woff2);unicode-range:U+0460-052F,U+1C80-1C88,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F;font-display:swap;}@font-face {font-family:JetBrains Mono;font-style:normal;font-weight:700;src:url(/cf-fonts/v/jetbrains-mono/5.0.18/latin-ext/wght/normal.woff2);unicode-range:U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF;font-display:swap;}@font-face {font-family:JetBrains Mono;font-style:normal;font-weight:700;src:url(/cf-fonts/v/jetbrains-mono/5.0.18/vietnamese/wght/normal.woff2);unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB;font-display:swap;}@font-face {font-family:JetBrains Mono;font-style:normal;font-weight:700;src:url(/cf-fonts/v/jetbrains-mono/5.0.18/greek/wght/normal.woff2);unicode-range:U+0370-03FF;font-display:swap;}@font-face {font-family:JetBrains Mono;font-style:normal;font-weight:700;src:url(/cf-fonts/v/jetbrains-mono/5.0.18/cyrillic/wght/normal.woff2);unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;font-display:swap;}@font-face {font-family:JetBrains Mono;font-style:normal;font-weight:700;src:url(/cf-fonts/v/jetbrains-mono/5.0.18/latin/wght/normal.woff2);unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:swap;}</style>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Outfit', 'sans-serif'],
+                        mono: ['JetBrains Mono', 'monospace'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #0f172a;
+            background-image:
+                radial-gradient(at 0% 0%, hsla(253, 16%, 7%, 1) 0, transparent 50%),
+                radial-gradient(at 50% 0%, hsla(225, 39%, 30%, 1) 0, transparent 50%),
+                radial-gradient(at 100% 0%, hsla(339, 49%, 30%, 1) 0, transparent 50%);
+            background-attachment: fixed;
+        }
+
+        .glass-panel {
+            background: rgba(30, 41, 59, 0.7);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .glass-input {
+            background: rgba(15, 23, 42, 0.6);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .glass-input:focus {
+            background: rgba(15, 23, 42, 0.8);
+            border-color: rgba(99, 102, 241, 0.5);
+            box-shadow: 0 0 0 2px rgba(99, 102, 241, 0.2);
+        }
+
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 6px;
+            height: 6px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: transparent;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: rgba(255, 255, 255, 0.2);
+        }
+
+        .animate-fade-in {
+            animation: fadeIn 0.5s ease-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+
+<body class="text-slate-300 min-h-screen flex flex-col md:flex-row overflow-hidden">
+
+    <!-- Sidebar -->
+    <aside class="w-full md:w-64 glass-panel border-r-0 md:border-r z-20 flex flex-col shrink-0">
+        <div class="p-6 border-b border-white/5 bg-slate-900/50">
+            <div class="flex items-center gap-3">
+                <div
+                    class="w-10 h-10 rounded-xl bg-gradient-to-br from-indigo-500 to-purple-600 flex items-center justify-center text-white text-lg shadow-lg shadow-indigo-500/20">
+                    <i class="fa-solid fa-brain"></i>
+                </div>
+                <div>
+                    <h1 class="font-bold text-slate-100 leading-tight">AI Studio</h1>
+                    <p class="text-[10px] uppercase tracking-wider font-bold text-indigo-400">Developer</p>
+                </div>
+            </div>
+        </div>
+
+        <nav class="flex-1 overflow-y-auto p-4 space-y-2">
+            <button onclick="switchTab('train')" id="nav-train"
+                class="nav-item w-full flex items-center gap-3 p-3 rounded-xl hover:bg-white/5 text-slate-400 hover:text-white transition active bg-white/10 text-white font-medium">
+                <i class="fa-solid fa-graduation-cap w-6 text-center"></i> <span>Train AI</span>
+            </button>
+            <button onclick="switchTab('manage')" id="nav-manage"
+                class="nav-item w-full flex items-center gap-3 p-3 rounded-xl hover:bg-white/5 text-slate-400 hover:text-white transition">
+                <i class="fa-solid fa-server w-6 text-center"></i> <span>Knowledge Base</span>
+            </button>
+            <button onclick="switchTab('test')" id="nav-test"
+                class="nav-item w-full flex items-center gap-3 p-3 rounded-xl hover:bg-white/5 text-slate-400 hover:text-white transition">
+                <i class="fa-solid fa-vial w-6 text-center"></i> <span>Test Bench</span>
+                <span class="ml-auto text-[10px] bg-indigo-500/20 text-indigo-300 px-2 py-0.5 rounded-full">BETA</span>
+            </button>
+            <button onclick="switchTab('logs')" id="nav-logs"
+                class="nav-item w-full flex items-center gap-3 p-3 rounded-xl hover:bg-white/5 text-slate-400 hover:text-white transition">
+                <i class="fa-solid fa-clipboard-list w-6 text-center"></i> <span>Logs</span>
+                <span id="log-badge"
+                    class="ml-auto text-[10px] bg-red-500/20 text-red-300 px-2 py-0.5 rounded-full hidden">0</span>
+            </button>
+        </nav>
+
+        <div class="p-4 border-t border-white/5 bg-slate-900/50 space-y-2">
+            <button onclick="document.getElementById('import-file').click()"
+                class="w-full flex items-center gap-3 p-2.5 rounded-lg hover:bg-white/5 text-xs text-slate-400 hover:text-blue-300 transition">
+                <i class="fa-solid fa-upload"></i> Import Backup
+            </button>
+            <input type="file" id="import-file" hidden accept=".json" onchange="importData(this)">
+
+            <button onclick="exportData()"
+                class="w-full flex items-center gap-3 p-2.5 rounded-lg hover:bg-white/5 text-xs text-slate-400 hover:text-green-300 transition">
+                <i class="fa-solid fa-download"></i> Export Data
+            </button>
+
+            <div class="h-px bg-white/10 my-2"></div>
+
+            <a href="index.html"
+                class="w-full flex items-center justify-center gap-2 p-3 rounded-xl bg-indigo-600 hover:bg-indigo-500 text-white font-bold text-sm shadow-lg shadow-indigo-600/20 transition">
+                <i class="fa-solid fa-rocket"></i> Launch App
+            </a>
+        </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="flex-1 flex flex-col h-screen overflow-hidden relative">
+        <!-- Stats Header -->
+        <header
+            class="p-6 md:p-8 shrink-0 flex flex-wrap gap-4 justify-between items-end border-b border-white/5 bg-slate-900/30 backdrop-blur-sm z-10">
+            <div>
+                <h2 class="text-2xl font-bold text-white mb-1" id="page-title">Training Center</h2>
+                <p class="text-sm text-slate-400">Manage the neural patterns and responses.</p>
+            </div>
+            <div class="flex gap-4">
+                <div class="glass-panel px-4 py-2 rounded-xl flex flex-col items-center min-w-[100px]">
+                    <span class="text-xs font-bold text-slate-500 uppercase">Patterns</span>
+                    <span class="text-xl font-bold text-white" id="stat-count">0</span>
+                </div>
+                <div class="glass-panel px-4 py-2 rounded-xl flex flex-col items-center min-w-[100px]">
+                    <span class="text-xs font-bold text-slate-500 uppercase">Efficiency</span>
+                    <span class="text-xl font-bold text-emerald-400">98%</span>
+                </div>
+            </div>
+        </header>
+
+        <!-- Content Views -->
+        <div class="flex-1 overflow-y-auto p-6 md:p-8 space-y-8 scroll-smooth relative" id="content-area">
+
+            <!-- VIEW: TRAIN -->
+            <div id="view-train" class="animate-fade-in max-w-4xl mx-auto space-y-6">
+                <!-- Single Entry -->
+                <div class="glass-panel p-1 rounded-3xl p-6 md:p-8 relative overflow-hidden group">
+                    <div class="absolute top-0 right-0 p-8 opacity-5 group-hover:opacity-10 transition duration-500"><i
+                            class="fa-solid fa-brain text-9xl"></i></div>
+
+                    <h3 class="text-lg font-bold text-white mb-6 flex items-center gap-2"><i
+                            class="fa-solid fa-plus-circle text-indigo-400"></i> New Neural Pattern</h3>
+
+                    <div class="space-y-4 relative z-10">
+                        <div>
+                            <label class="block text-xs font-bold text-indigo-300 mb-2 uppercase tracking-wide">User
+                                Query (Trigger)</label>
+                            <input type="text" id="train-q" placeholder="e.g. How do I make fried rice?"
+                                class="glass-input w-full rounded-xl p-4 text-white placeholder-slate-500 focus:outline-none focus:ring-2 ring-indigo-500/50 font-medium">
+                            <p class="text-[10px] text-slate-500 mt-1 ml-1"><i
+                                    class="fa-solid fa-lightbulb text-yellow-500/50"></i> Tip: Keep it simple. Keywords
+                                matter more than grammar.</p>
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-bold text-emerald-300 mb-2 uppercase tracking-wide">AI
+                                Response</label>
+                            <textarea id="train-a" rows="4" placeholder="e.g. Here is a simple recipe: ..."
+                                class="glass-input w-full rounded-xl p-4 text-white placeholder-slate-500 focus:outline-none focus:ring-2 ring-emerald-500/50 font-mono text-sm"></textarea>
+                            <p class="text-[10px] text-slate-500 mt-1 ml-1"><i
+                                    class="fa-brands fa-markdown opacity-50"></i> Markdown supported (Bold, List, Links)
+                            </p>
+                        </div>
+
+                        <div class="pt-4 flex justify-end">
+                            <button onclick="addPattern()"
+                                class="bg-indigo-600 hover:bg-indigo-500 text-white px-8 py-3 rounded-xl font-bold shadow-lg shadow-indigo-600/30 hover:scale-105 active:scale-95 transition flex items-center gap-2">
+                                <i class="fa-solid fa-save"></i> Save to Neural Net
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bulk Import CSS -->
+                <div class="glass-panel rounded-3xl p-6 opacity-80 hover:opacity-100 transition">
+                    <div class="flex justify-between items-center mb-4">
+                        <h3 class="font-bold text-white flex items-center gap-2"><i
+                                class="fa-solid fa-layer-group text-blue-400"></i> Bulk Train (CSV)</h3>
+                        <button onclick="toggleBulk()"
+                            class="text-xs bg-slate-800 hover:bg-slate-700 text-slate-300 px-3 py-1 rounded-lg transition">Expand</button>
+                    </div>
+                    <div id="bulk-area" class="hidden space-y-4">
+                        <textarea id="bulk-input" rows="5"
+                            class="glass-input w-full rounded-xl p-3 text-xs font-mono text-slate-300"
+                            placeholder="Trigger,Response&#10;Hi,Hello there!&#10;Bye,See you soon!"></textarea>
+                        <button onclick="processBulk()"
+                            class="w-full py-3 bg-blue-600/20 hover:bg-blue-600/30 text-blue-300 border border-blue-500/30 rounded-xl font-bold transition">Process
+                            CSV Data</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- VIEW: MANAGE -->
+            <div id="view-manage" class="hidden animate-fade-in max-w-5xl mx-auto h-full flex flex-col">
+                <div class="flex gap-4 mb-4">
+                    <div class="relative flex-1">
+                        <i class="fa-solid fa-search absolute left-4 top-3.5 text-slate-500"></i>
+                        <input type="text" id="search-kb" onkeyup="renderKB()" placeholder="Search knowledge base..."
+                            class="glass-input w-full rounded-xl py-3 pl-10 pr-4 text-sm text-white focus:outline-none">
+                    </div>
+                    <button onclick="deleteSelected()" id="btn-del-sel"
+                        class="hidden bg-red-500/10 hover:bg-red-500/20 text-red-400 border border-red-500/30 px-4 rounded-xl text-sm font-bold transition">Delete
+                        Selected</button>
+                </div>
+
+                <div class="glass-panel flex-1 rounded-3xl overflow-hidden flex flex-col">
+                    <div class="overflow-y-auto flex-1 p-2 space-y-1" id="kb-list">
+                        <!-- Items -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- VIEW: TEST -->
+            <div id="view-test" class="hidden animate-fade-in max-w-2xl mx-auto mt-10">
+                <div class="glass-panel p-8 rounded-3xl text-center space-y-6">
+                    <div
+                        class="w-20 h-20 bg-slate-800 rounded-full mx-auto flex items-center justify-center text-4xl animate-bounce-slow">
+                        🤖</div>
+                    <h3 class="text-2xl font-bold text-white">Neural Test Bench</h3>
+
+                    <div class="relative">
+                        <input type="text" id="test-input" placeholder="Type a query to test..."
+                            class="glass-input w-full rounded-full py-4 px-6 text-center text-lg text-white focus:outline-none focus:ring-2 ring-pink-500/50"
+                            onkeypress="if(event.key === 'Enter') runTest()">
+                        <button onclick="runTest()"
+                            class="absolute right-2 top-2 w-10 h-10 bg-pink-600 rounded-full flex items-center justify-center text-white shadow-lg hover:scale-110 transition"><i
+                                class="fa-solid fa-play"></i></button>
+                    </div>
+
+                    <div id="test-output"
+                        class="hidden text-left bg-black/40 rounded-xl p-6 border border-white/5 font-mono text-sm space-y-2">
+                        <!-- Result -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- VIEW: LOGS -->
+            <div id="view-logs" class="hidden animate-fade-in max-w-4xl mx-auto">
+                <div class="flex justify-between items-center mb-6">
+                    <h3 class="font-bold text-white text-xl">Missed Queries</h3>
+                    <button onclick="clearLogs()" class="text-xs text-red-400 hover:text-red-300"><i
+                            class="fa-solid fa-trash mr-1"></i> Clear All</button>
+                </div>
+
+                <div class="glass-panel rounded-3xl overflow-hidden min-h-[400px]">
+                    <div id="logs-list" class="divide-y divide-white/5">
+                        <!-- Logs -->
+                    </div>
+                    <div id="empty-logs"
+                        class="hidden flex flex-col items-center justify-center h-[400px] text-slate-500">
+                        <i class="fa-solid fa-check-circle text-4xl mb-4 text-emerald-500/50"></i>
+                        <p>All systems nominal. No missed queries.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <script>
+        // --- CONSTANTS ---
+        const DB_KEY = 'smart_kitchen_db_v53';
+        let currentDB = { customKnowledge: [], ai_logs: [] };
+        let selectedIDs = new Set();
+
+        // --- INIT ---
+        window.onload = () => {
+            loadDB();
+            updateStats();
+            switchTab('train');
+        };
+
+        // --- CORE LOGIC ---
+        function loadDB() {
+            const raw = localStorage.getItem(DB_KEY);
+            if (raw) currentDB = JSON.parse(raw);
+            if (!currentDB.customKnowledge) currentDB.customKnowledge = [];
+            if (!currentDB.ai_logs) currentDB.ai_logs = [];
+        }
+
+        function saveDB() {
+            localStorage.setItem(DB_KEY, JSON.stringify(currentDB));
+            updateStats();
+        }
+
+        function updateStats() {
+            document.getElementById('stat-count').innerText = currentDB.customKnowledge.length;
+
+            const logs = currentDB.ai_logs.length;
+            const badge = document.getElementById('log-badge');
+            if (logs > 0) {
+                badge.innerText = logs;
+                badge.classList.remove('hidden');
+            } else {
+                badge.classList.add('hidden');
+            }
+        }
+
+        // --- NAVIGATION ---
+        function switchTab(tab) {
+            // Update Nav
+            document.querySelectorAll('.nav-item').forEach(el => {
+                if (el.id === `nav-${tab}`) {
+                    el.classList.add('bg-white/10', 'text-white', 'font-medium');
+                    el.classList.remove('text-slate-400');
+                } else {
+                    el.classList.remove('bg-white/10', 'text-white', 'font-medium');
+                    el.classList.add('text-slate-400');
+                }
+            });
+
+            // Update View
+            ['train', 'manage', 'test', 'logs'].forEach(t => {
+                const el = document.getElementById(`view-${t}`);
+                if (t === tab) el.classList.remove('hidden');
+                else el.classList.add('hidden');
+            });
+
+            // Specific View Logic
+            const titles = { train: 'Training Center', manage: 'Knowledge Base', test: 'Test Bench', logs: 'System Logs' };
+            document.getElementById('page-title').innerText = titles[tab];
+
+            if (tab === 'manage') renderKB();
+            if (tab === 'logs') renderLogs();
+        }
+
+        // --- TRAIN ---
+        function addPattern() {
+            const q = document.getElementById('train-q').value.trim();
+            const a = document.getElementById('train-a').value.trim();
+            if (!q || !a) return alert('Please enter both Trigger and Response!');
+
+            currentDB.customKnowledge.push({ q, a, t: Date.now() });
+            saveDB();
+
+            // UI Feedback
+            document.getElementById('train-q').value = '';
+            document.getElementById('train-a').value = '';
+
+            // Animation
+            const btn = document.querySelector('button[onclick="addPattern()"]');
+            const original = btn.innerHTML;
+            btn.innerHTML = '<i class="fa-solid fa-check"></i> Saved!';
+            btn.classList.add('bg-emerald-600');
+            setTimeout(() => {
+                btn.innerHTML = original;
+                btn.classList.remove('bg-emerald-600');
+            }, 1500);
+        }
+
+        function toggleBulk() {
+            document.getElementById('bulk-area').classList.toggle('hidden');
+        }
+
+        function processBulk() {
+            const raw = document.getElementById('bulk-input').value;
+            if (!raw) return;
+            let count = 0;
+            const lines = raw.split('\n');
+            lines.forEach(line => {
+                const [q, ...rest] = line.split(',');
+                const a = rest.join(',').trim();
+                if (q && a) {
+                    currentDB.customKnowledge.push({ q: q.trim(), a: a, t: Date.now() });
+                    count++;
+                }
+            });
+            saveDB();
+            alert(`Imported ${count} patterns.`);
+            document.getElementById('bulk-input').value = '';
+        }
+
+        // --- MANAGE ---
+        function renderKB() {
+            const list = document.getElementById('kb-list');
+            const search = document.getElementById('search-kb').value.toLowerCase();
+            const btnDel = document.getElementById('btn-del-sel');
+
+            const filtered = currentDB.customKnowledge.map((k, i) => ({ ...k, originalIndex: i }))
+                .filter(k => k.q.toLowerCase().includes(search) || k.a.toLowerCase().includes(search))
+                .reverse(); // Newest first
+
+            if (filtered.length === 0) {
+                list.innerHTML = '<div class="p-8 text-center text-slate-500">No patterns found.</div>';
+                return;
+            }
+
+            list.innerHTML = filtered.map(k => `
+                <div class="group p-4 rounded-xl hover:bg-white/5 border border-transparent hover:border-white/5 transition flex gap-4 items-start ${selectedIDs.has(k.originalIndex) ? 'bg-indigo-500/10 border-indigo-500/30' : ''}">
+                    <div class="pt-1">
+                        <input type="checkbox" onchange="toggleSelect(${k.originalIndex})" ${selectedIDs.has(k.originalIndex) ? 'checked' : ''} class="w-4 h-4 rounded border-slate-600 bg-slate-800 text-indigo-500 focus:ring-offset-0 focus:ring-0">
+                    </div>
+                    <div class="flex-1 min-w-0">
+                        <p class="font-bold text-indigo-300 text-sm mb-1">${k.q}</p>
+                        <div class="text-xs text-slate-400 font-mono bg-black/20 p-2 rounded line-clamp-2">${k.a}</div>
+                    </div>
+                    <button onclick="deleteSingle(${k.originalIndex})" class="w-8 h-8 rounded-lg flex items-center justify-center text-slate-600 hover:text-red-400 hover:bg-red-500/10 transition opacity-0 group-hover:opacity-100">
+                        <i class="fa-solid fa-trash-can"></i>
+                    </button>
+                </div>
+            `).join('');
+
+            btnDel.classList.toggle('hidden', selectedIDs.size === 0);
+            if (selectedIDs.size > 0) btnDel.innerText = `Delete Selected (${selectedIDs.size})`;
+        }
+
+        function toggleSelect(idx) {
+            if (selectedIDs.has(idx)) selectedIDs.delete(idx);
+            else selectedIDs.add(idx);
+            renderKB();
+        }
+
+        function deleteSingle(idx) {
+            if (!confirm('Delete this pattern?')) return;
+            currentDB.customKnowledge.splice(idx, 1);
+            saveDB();
+            selectedIDs.delete(idx); // Prevent index mismatch issues by mostly clearing or checking
+            selectedIDs.clear(); // Safest approach
+            renderKB();
+        }
+
+        function deleteSelected() {
+            if (!confirm(`Delete ${selectedIDs.size} items?`)) return;
+            // Sort indices descending to splice correctly
+            const indices = Array.from(selectedIDs).sort((a, b) => b - a);
+            indices.forEach(idx => currentDB.customKnowledge.splice(idx, 1));
+            saveDB();
+            selectedIDs.clear();
+            renderKB();
+        }
+
+        // --- TEST ---
+        function runTest() {
+            const q = document.getElementById('test-input').value.toLowerCase();
+            if (!q) return;
+
+            const el = document.getElementById('test-output');
+            el.classList.remove('hidden');
+
+            // Logic matching simple fuzzy (same as main app)
+            const match = currentDB.customKnowledge.find(k => k.q.toLowerCase().includes(q) || q.includes(k.q.toLowerCase()));
+
+            if (match) {
+                el.innerHTML = `
+                    <div class="flex items-center gap-2 text-emerald-400 font-bold mb-2"><i class="fa-solid fa-check-circle"></i> Match Found</div>
+                    <div class="text-slate-300">Trigger: <span class="text-white">${match.q}</span></div>
+                    <div class="mt-2 bg-white/5 p-3 rounded text-indigo-200">${marked.parse(match.a)}</div>
+                `;
+            } else {
+                el.innerHTML = `
+                    <div class="flex items-center gap-2 text-red-400 font-bold mb-2"><i class="fa-solid fa-times-circle"></i> No Match</div>
+                    <p class="text-slate-400">This query would trigger a fallback response or web search.</p>
+                `;
+            }
+        }
+
+        // --- LOGS ---
+        function renderLogs() {
+            const list = document.getElementById('logs-list');
+            const empty = document.getElementById('empty-logs');
+
+            if (currentDB.ai_logs.length === 0) {
+                list.innerHTML = '';
+                empty.classList.remove('hidden');
+                return;
+            }
+            empty.classList.add('hidden');
+
+            list.innerHTML = currentDB.ai_logs.slice().reverse().map(l => `
+                <div class="p-4 hover:bg-white/5 flex items-center justify-between group">
+                    <div>
+                        <p class="font-bold text-slate-200">"${l.q}"</p>
+                        <span class="text-[10px] text-slate-500">${new Date(l.t).toLocaleString()}</span>
+                    </div>
+                    <button onclick="trainFromLog('${l.q.replace(/'/g, "\\'")}')" class="px-4 py-2 rounded-lg bg-indigo-600/20 text-indigo-400 hover:bg-indigo-600 hover:text-white text-xs font-bold transition">
+                        <i class="fa-solid fa-plus mr-1"></i> Train
+                    </button>
+                </div>
+            `).join('');
+        }
+
+        function clearLogs() {
+            if (!confirm('Clear all logs?')) return;
+            currentDB.ai_logs = [];
+            saveDB();
+            renderLogs();
+        }
+
+        function trainFromLog(q) {
+            document.getElementById('train-q').value = q;
+            switchTab('train');
+            document.getElementById('train-a').focus();
+        }
+
+        // --- EXPORT/IMPORT ---
+        function exportData() {
+            const dataStr = "data:text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(currentDB.customKnowledge, null, 2));
+            const node = document.createElement('a');
+            node.setAttribute("href", dataStr);
+            node.setAttribute("download", "ai_brain_backup.json");
+            document.body.appendChild(node);
+            node.click();
+            node.remove();
+        }
+
+        function importData(input) {
+            const file = input.files[0];
+            if (!file) return;
+            const reader = new FileReader();
+            reader.onload = (e) => {
+                try {
+                    const data = JSON.parse(e.target.result);
+                    if (Array.isArray(data)) {
+                        currentDB.customKnowledge.push(...data);
+                        saveDB();
+                        alert(`Imported ${data.length} items.`);
+                        switchTab('manage');
+                    } else alert('Invalid JSON format');
+                } catch (err) { alert('Error parsing file'); }
+            };
+            reader.readAsText(file);
+        }
+
+    </script>
+</body>
+
+</html>

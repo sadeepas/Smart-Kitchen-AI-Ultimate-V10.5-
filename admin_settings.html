@@ -1,0 +1,792 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App Configuration | Kitchen AI</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;700&display=swap');
+
+        body {
+            font-family: 'Outfit', sans-serif;
+        }
+
+        .glass-panel {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(24px);
+            -webkit-backdrop-filter: blur(24px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+        }
+
+        .glass-input {
+            background: rgba(0, 0, 0, 0.2);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .glass-input:focus {
+            background: rgba(0, 0, 0, 0.4);
+            border-color: rgba(96, 165, 250, 0.5);
+            box-shadow: 0 0 0 4px rgba(96, 165, 250, 0.1);
+        }
+
+        /* Animated Background */
+        .animated-bg {
+            background: linear-gradient(-45deg, #0f172a, #1e1b4b, #312e81, #0f172a);
+            background-size: 400% 400%;
+            animation: gradient 15s ease infinite;
+        }
+
+        @keyframes gradient {
+            0% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        /* Toggle Switch */
+        .toggle-checkbox:checked {
+            right: 0;
+            border-color: #3b82f6;
+        }
+
+        .toggle-checkbox:checked+.toggle-label {
+            background-color: #3b82f6;
+        }
+    </style>
+    <script src="srilanka_budget_data.js"></script>
+</head>
+
+<body class="animated-bg min-h-screen text-slate-200 p-4 md:p-8 selection:bg-blue-500 selection:text-white">
+
+    <div class="max-w-6xl mx-auto space-y-8">
+
+        <!-- Sticky Header -->
+        <header
+            class="sticky top-4 z-50 glass-panel rounded-2xl p-4 flex flex-col md:flex-row justify-between items-center mb-8">
+            <div class="flex items-center gap-4">
+                <div
+                    class="w-12 h-12 bg-gradient-to-br from-blue-600 to-indigo-600 rounded-xl flex items-center justify-center text-white text-xl shadow-lg shadow-blue-900/40">
+                    <i class="fa-solid fa-sliders"></i>
+                </div>
+                <div>
+                    <h1 class="text-xl font-bold text-white tracking-tight">App Configuration</h1>
+                    <p class="text-slate-400 text-xs font-medium uppercase tracking-wider">System Preferences</p>
+                </div>
+            </div>
+            <div class="flex gap-3 mt-4 md:mt-0 w-full md:w-auto">
+                <button onclick="window.location.href='index.html'"
+                    class="flex-1 md:flex-none px-5 py-2.5 bg-slate-800/50 hover:bg-slate-700/80 rounded-xl text-sm text-slate-300 font-medium transition border border-slate-700">
+                    <i class="fa-solid fa-arrow-left mr-2"></i> App
+                </button>
+                <button onclick="saveConfig()"
+                    class="flex-1 md:flex-none px-6 py-2.5 bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-500 hover:to-indigo-500 rounded-xl text-sm text-white font-bold shadow-lg shadow-blue-900/50 transition transform hover:scale-105 active:scale-95">
+                    <i class="fa-solid fa-save mr-2"></i> Save Changes
+                </button>
+            </div>
+        </header>
+
+        <!-- Main Grid -->
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+
+            <!-- COL 1: Identity & Brand -->
+            <div class="lg:col-span-1 space-y-6">
+                <!-- Identity Card -->
+                <div class="glass-panel p-6 rounded-3xl relative overflow-hidden group">
+                    <div class="absolute top-0 right-0 p-4 opacity-5 group-hover:opacity-10 transition duration-500"><i
+                            class="fa-solid fa-fingerprint text-8xl text-blue-500"></i></div>
+
+                    <h2 class="text-lg font-bold text-white mb-6 flex items-center gap-3">
+                        <div class="p-2 bg-blue-500/20 rounded-lg text-blue-400"><i class="fa-solid fa-fingerprint"></i>
+                        </div>
+                        Identity
+                    </h2>
+
+                    <div class="space-y-5">
+                        <div class="group/input">
+                            <label
+                                class="block text-xs font-bold text-blue-300 mb-1.5 uppercase tracking-wide group-focus-within/input:text-blue-400 transition">App
+                                Name</label>
+                            <input type="text" id="app-name" placeholder="Kitchen AI"
+                                class="glass-input w-full rounded-xl p-3 text-white text-sm placeholder-slate-600 outline-none">
+                        </div>
+
+                        <div class="group/input">
+                            <label
+                                class="block text-xs font-bold text-purple-300 mb-1.5 uppercase tracking-wide group-focus-within/input:text-purple-400 transition">Version
+                                Label</label>
+                            <input type="text" id="app-version" placeholder="V12.0 Ultimate"
+                                class="glass-input w-full rounded-xl p-3 text-white text-sm placeholder-slate-600 outline-none">
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-bold text-slate-400 mb-1.5 uppercase tracking-wide">Logo /
+                                Icon</label>
+                            <div class="flex gap-3 items-stretch">
+                                <div class="flex-1 relative">
+                                    <input type="text" id="app-logo" placeholder="🍲 or URL"
+                                        class="glass-input w-full rounded-xl p-3 text-white text-sm placeholder-slate-600 outline-none pr-10">
+                                    <button onclick="document.getElementById('icon-upload').click()"
+                                        class="absolute right-2 top-2 p-1.5 bg-slate-700 hover:bg-slate-600 rounded-lg text-slate-300 transition text-xs"
+                                        title="Upload">
+                                        <i class="fa-solid fa-upload"></i>
+                                    </button>
+                                </div>
+                                <input type="file" id="icon-upload" class="hidden" accept="image/*"
+                                    onchange="handleIconUpload(this)">
+                                <div id="logo-preview"
+                                    class="w-11 h-11 bg-slate-800 rounded-xl flex items-center justify-center border border-slate-700 text-2xl shadow-inner overflow-hidden">
+                                    🍲
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- AI Training Shortcut -->
+                <div
+                    class="glass-panel p-6 rounded-3xl bg-gradient-to-br from-purple-900/20 to-pink-900/20 border-purple-500/20">
+                    <div class="flex justify-between items-center mb-2">
+                        <h3 class="font-bold text-white">AI Brain Studio</h3>
+                        <i class="fa-solid fa-brain text-purple-400 text-xl"></i>
+                    </div>
+                    <p class="text-xs text-slate-400 mb-4 leading-relaxed">Manage the neural network, teach new recipes,
+                        and customize the AI's knowledge base.</p>
+                    <button onclick="window.location.href='ai_training_panel.html'"
+                        class="w-full py-2.5 bg-purple-600 hover:bg-purple-500 text-white text-xs font-bold rounded-xl transition shadow-lg shadow-purple-900/30 flex items-center justify-center gap-2">
+                        Open Studio <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- COL 2: Visuals & Experience -->
+            <div class="lg:col-span-2 space-y-6">
+                <div class="glass-panel p-6 rounded-3xl">
+                    <h2 class="text-lg font-bold text-white mb-6 flex items-center gap-3">
+                        <div class="p-2 bg-pink-500/20 rounded-lg text-pink-400"><i class="fa-solid fa-palette"></i>
+                        </div>
+                        Appearance & Logic
+                    </h2>
+
+                    <div class="grid md:grid-cols-2 gap-8">
+                        <!-- Theme Colors -->
+                        <div>
+                            <label class="block text-xs font-bold text-slate-400 mb-3 uppercase tracking-wide">Accent
+                                Color</label>
+                            <div class="flex flex-wrap gap-3">
+                                <button onclick="setTheme('#10b981')"
+                                    class="w-10 h-10 rounded-full bg-emerald-500 shadow-lg ring-2 ring-offset-2 ring-offset-slate-900 ring-transparent hover:scale-110 transition"
+                                    data-color="#10b981"></button>
+                                <button onclick="setTheme('#3b82f6')"
+                                    class="w-10 h-10 rounded-full bg-blue-500 shadow-lg ring-2 ring-offset-2 ring-offset-slate-900 ring-transparent hover:scale-110 transition"
+                                    data-color="#3b82f6"></button>
+                                <button onclick="setTheme('#8b5cf6')"
+                                    class="w-10 h-10 rounded-full bg-violet-500 shadow-lg ring-2 ring-offset-2 ring-offset-slate-900 ring-transparent hover:scale-110 transition"
+                                    data-color="#8b5cf6"></button>
+                                <button onclick="setTheme('#ec4899')"
+                                    class="w-10 h-10 rounded-full bg-pink-500 shadow-lg ring-2 ring-offset-2 ring-offset-slate-900 ring-transparent hover:scale-110 transition"
+                                    data-color="#ec4899"></button>
+                                <button onclick="setTheme('#f59e0b')"
+                                    class="w-10 h-10 rounded-full bg-amber-500 shadow-lg ring-2 ring-offset-2 ring-offset-slate-900 ring-transparent hover:scale-110 transition"
+                                    data-color="#f59e0b"></button>
+                            </div>
+                            <input type="hidden" id="theme-color">
+                        </div>
+
+                        <!-- Toggles -->
+                        <div class="space-y-3">
+                            <div
+                                class="flex items-center justify-between p-3 rounded-xl bg-white/5 border border-white/5 hover:border-white/10 transition">
+                                <div>
+                                    <div class="text-sm font-bold text-white">Forced Dark Mode</div>
+                                    <div class="text-[10px] text-slate-400">Override system pref</div>
+                                </div>
+                                <label class="relative inline-flex items-center cursor-pointer">
+                                    <input type="checkbox" id="force-dark" class="sr-only peer" checked>
+                                    <div
+                                        class="w-11 h-6 bg-slate-700 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-blue-600">
+                                    </div>
+                                </label>
+                            </div>
+
+                            <!-- Toggle Item -->
+                            <div
+                                class="flex items-center justify-between p-3 rounded-xl bg-white/5 border border-white/5 hover:border-white/10 transition">
+                                <div>
+                                    <div class="text-sm font-bold text-white">Show Loader</div>
+                                    <div class="text-[10px] text-slate-400">Splash screen on start</div>
+                                </div>
+                                <label class="relative inline-flex items-center cursor-pointer">
+                                    <input type="checkbox" id="show-loader" class="sr-only peer" checked>
+                                    <div
+                                        class="w-11 h-6 bg-slate-700 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-blue-600">
+                                    </div>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-8 pt-6 border-t border-white/10 grid md:grid-cols-3 gap-6">
+                        <div>
+                            <label class="block text-xs font-bold text-green-400 mb-1.5 uppercase">Currency</label>
+                            <input type="text" id="app-currency" placeholder="LKR"
+                                class="glass-input w-full rounded-xl p-2.5 text-white text-sm">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-bold text-orange-400 mb-1.5 uppercase">Units</label>
+                            <select id="app-units"
+                                class="glass-input w-full rounded-xl p-2.5 text-white text-sm outline-none cursor-pointer">
+                                <option value="metric" class="bg-slate-800">Metric (kg, g)</option>
+                                <option value="imperial" class="bg-slate-800">Imperial (lb, oz)</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-xs font-bold text-indigo-400 mb-1.5 uppercase">Personality</label>
+                            <select id="app-ai-personality"
+                                class="glass-input w-full rounded-xl p-2.5 text-white text-sm outline-none cursor-pointer">
+                                <option value="professional" class="bg-slate-800">Professional 🤖</option>
+                                <option value="friendly" class="bg-slate-800">Friendly Chef 👩‍🍳</option>
+                                <option value="pirate" class="bg-slate-800">Pirate Cook 🏴‍☠️</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mobile Nav Config -->
+                <div class="glass-panel p-6 rounded-3xl">
+                    <h2 class="text-lg font-bold text-white mb-2 flex items-center gap-3">
+                        <div class="p-2 bg-indigo-500/20 rounded-lg text-indigo-400"><i
+                                class="fa-solid fa-mobile-screen"></i></div>
+                        Mobile Nav (Pinned)
+                    </h2>
+                    <p class="text-xs text-slate-400 mb-6">Select exactly 4 items to pin to the bottom bar. Others will
+                        appear in "More".</p>
+                    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3" id="mobile-tabs-container">
+                        <!-- JS Injected -->
+                    </div>
+                </div>
+
+                <!-- PC Nav Config -->
+                <div class="glass-panel p-6 rounded-3xl">
+                    <h2 class="text-lg font-bold text-white mb-2 flex items-center gap-3">
+                        <div class="p-2 bg-blue-500/20 rounded-lg text-blue-400"><i class="fa-solid fa-desktop"></i>
+                        </div>
+                        PC Sidebar Modules
+                    </h2>
+                    <p class="text-xs text-slate-400 mb-6">Toggle modules to show/hide them on the desktop sidebar.</p>
+                    <div class="space-y-2" id="pc-tabs-container">
+                        <!-- JS Injected -->
+                    </div>
+                </div>
+
+                <!-- Logic & Preferences (NEW) -->
+                <div class="glass-panel p-6 rounded-3xl">
+                    <h2 class="text-lg font-bold text-white mb-6 flex items-center gap-3">
+                        <div class="p-2 bg-orange-500/20 rounded-lg text-orange-400"><i
+                                class="fa-solid fa-microchip"></i></div>
+                        Kitchen Logic
+                    </h2>
+
+                    <div class="space-y-5">
+                        <div>
+                            <label class="block text-xs font-bold text-slate-400 mb-1.5 uppercase">Target Monthly
+                                Budget</label>
+                            <div class="relative">
+                                <span class="absolute left-3 top-2.5 text-slate-500 text-sm font-bold">LKR</span>
+                                <input type="number" id="pref-budget" placeholder="60000"
+                                    class="glass-input w-full rounded-xl p-2.5 pl-12 text-white text-sm">
+                            </div>
+                            <p class="text-[10px] text-slate-500 mt-1">Used for budget analysis and alerts.</p>
+                        </div>
+
+                        <div class="grid grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-xs font-bold text-slate-400 mb-1.5 uppercase">Low Stock
+                                    Limit</label>
+                                <input type="number" id="pref-lowstock" placeholder="2"
+                                    class="glass-input w-full rounded-xl p-2.5 text-white text-sm">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-bold text-slate-400 mb-1.5 uppercase">Dietary
+                                    Pref</label>
+                                <select id="pref-diet"
+                                    class="glass-input w-full rounded-xl p-2.5 text-white text-sm outline-none cursor-pointer">
+                                    <option value="non-veg" class="bg-slate-800">Non-Veg 🍗</option>
+                                    <option value="veg" class="bg-slate-800">Vegetarian 🥦</option>
+                                    <option value="vegan" class="bg-slate-800">Vegan 🌿</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Data Management (NEW) -->
+                <div class="glass-panel p-6 rounded-3xl border-red-500/10">
+                    <h2 class="text-lg font-bold text-white mb-6 flex items-center gap-3">
+                        <div class="p-2 bg-red-500/20 rounded-lg text-red-400"><i class="fa-solid fa-database"></i>
+                        </div>
+                        Data & Storage
+                    </h2>
+
+                    <div class="grid grid-cols-2 gap-3 mb-4">
+                        <button onclick="backupData()"
+                            class="px-4 py-3 bg-slate-800 hover:bg-slate-700 rounded-xl text-xs font-bold text-slate-300 transition flex flex-col items-center gap-2">
+                            <i class="fa-solid fa-download text-lg"></i> Backup
+                        </button>
+                        <button onclick="document.getElementById('restore-upload').click()"
+                            class="px-4 py-3 bg-slate-800 hover:bg-slate-700 rounded-xl text-xs font-bold text-slate-300 transition flex flex-col items-center gap-2">
+                            <i class="fa-solid fa-upload text-lg"></i> Restore
+                        </button>
+                        <input type="file" id="restore-upload" class="hidden" accept=".json"
+                            onchange="restoreData(this)">
+                    </div>
+
+                    <div class="mt-4 pt-4 border-t border-slate-700/50 mb-4">
+                        <h3 class="text-xs font-bold text-slate-500 uppercase mb-2">Market Data</h3>
+                        <div class="flex gap-2">
+                            <button onclick="document.getElementById('price-sync-settings').click()"
+                                class="px-4 py-3 bg-indigo-900/20 hover:bg-indigo-900/30 border border-indigo-500/20 rounded-xl text-indigo-300 text-xs font-bold transition flex items-center justify-center gap-2 flex-1">
+                                <i class="fa-solid fa-sync"></i> Sync Prices
+                            </button>
+                            <input type="file" id="price-sync-settings" class="hidden" accept=".json"
+                                onchange="syncPricesSettings(this)">
+                        </div>
+                    </div>
+
+                    <button onclick="factoryReset()"
+                        class="w-full py-3 bg-red-900/30 hover:bg-red-900/50 border border-red-500/30 rounded-xl text-red-400 text-xs font-bold transition flex items-center justify-center gap-2">
+                        <i class="fa-solid fa-triangle-exclamation"></i> Factory Reset (Clear All)
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            // --- UPDATED CONFIG LOGIC (Split PC/Mobile) ---
+
+            const defaults = {
+                appName: 'Kitchen AI',
+                appVersion: 'V7.8 Ultimate',
+                appLogo: '🍲',
+                themeColor: '#10b981',
+                showLoader: true,
+                forceDark: false,
+                currency: 'LKR',
+                units: 'metric',
+                aiPersonality: 'friendly',
+                voiceEnabled: false,
+                startPage: 'dashboard',
+                animSpeed: '1',
+                // Master List of ALL possible tabs
+                masterTabs: [
+                    { id: 'dashboard', name: 'Home', icon: 'fa-chart-pie' },
+                    { id: 'chat', name: 'Assistant', icon: 'fa-message' },
+                    { id: 'inventory', name: 'Stock', icon: 'fa-box-open' },
+                    { id: 'market', name: 'Market', icon: 'fa-shop' },
+                    { id: 'shopping', name: 'Shop', icon: 'fa-cart-shopping' },
+                    { id: 'cook', name: 'Cook', icon: 'fa-fire' },
+                    { id: 'ai', name: 'AI Chef', icon: 'fa-robot' },
+                    { id: 'training', name: 'Training', icon: 'fa-brain' },
+                    { id: 'analytics', name: 'Data', icon: 'fa-chart-line' },
+                    { id: 'settings', name: 'Settings', icon: 'fa-gear' },
+                    { id: 'help', name: 'Help', icon: 'fa-circle-question' }
+                ],
+                // PC Configuration (ALL Enabled by default)
+                pcNav: {
+                    enabled: ['dashboard', 'chat', 'inventory', 'market', 'shopping', 'cook', 'ai', 'training', 'analytics', 'settings', 'help']
+                },
+                // Mobile Configuration
+                mobileNav: {
+                    primary: ['dashboard', 'inventory', 'cook', 'shopping'], // Bottom Bar (Max 4-5)
+                    enabled: ['dashboard', 'chat', 'inventory', 'market', 'shopping', 'cook', 'ai', 'training', 'analytics', 'settings', 'help'] // All enabled tabs (Primary + More)
+                }
+            };
+
+            function getConfig() {
+                const saved = localStorage.getItem('app_config');
+                let config = saved ? JSON.parse(saved) : defaults;
+
+                // Migration / Fail-safe
+                if (!config.masterTabs) config.masterTabs = defaults.masterTabs;
+                if (!config.pcNav) config.pcNav = defaults.pcNav;
+                if (!config.mobileNav) config.mobileNav = defaults.mobileNav;
+
+                return config;
+            }
+
+            function loadUI() {
+                const config = getConfig();
+                window.currentConfig = config;
+
+                // Basic Fields
+                ['app-name', 'app-version', 'app-logo', 'theme-color', 'app-currency', 'app-units', 'app-ai-personality'].forEach(id => {
+                    const el = document.getElementById(id);
+                    const key = id.replace('app-', '').replace('theme-color', 'themeColor').replace('ai-personality', 'aiPersonality');
+                    if (el && config[key] !== undefined) el.value = config[key];
+                });
+
+                // Toggles
+                document.getElementById('show-loader').checked = config.showLoader !== false;
+                document.getElementById('force-dark').checked = config.forceDark === true;
+
+                updateLogoPreview();
+                highlightColorBtn(config.themeColor);
+
+                // Render Split Nav
+                renderMobileConfig();
+                renderPCConfig();
+            }
+
+            // --- MOBILE CONFIG RENDERER ---
+            function renderMobileConfig() {
+                const container = document.getElementById('mobile-tabs-container');
+                const tabs = window.currentConfig.masterTabs;
+                const mobil = window.currentConfig.mobileNav;
+
+                container.innerHTML = tabs.map(tab => {
+                    const isEnabled = mobil.enabled.includes(tab.id);
+                    const isPrimary = mobil.primary.includes(tab.id);
+
+                    return `
+                    <div class="glass-panel p-3 rounded-xl flex flex-col gap-2 relative group border transition duration-300
+                        ${isPrimary ? 'border-indigo-500/50 bg-indigo-500/10' : (isEnabled ? 'border-slate-600 bg-slate-800/40' : 'border-slate-800 bg-slate-900/40 opacity-50')}">
+                        
+                        <div class="flex justify-between items-start">
+                            <div class="flex items-center gap-2">
+                                <i class="fa-solid ${tab.icon} text-slate-400"></i>
+                                <span class="text-xs font-bold text-slate-200">${tab.name}</span>
+                            </div>
+                            <!-- Enable Toggle -->
+                            <div onclick="toggleMobileEnable('${tab.id}')" class="cursor-pointer">
+                                <i class="fa-solid ${isEnabled ? 'fa-toggle-on text-green-400' : 'fa-toggle-off text-slate-600'} text-xl"></i>
+                            </div>
+                        </div>
+
+                        ${isEnabled ? `
+                        <button onclick="toggleMobilePrimary('${tab.id}')" 
+                             class="w-full py-1.5 rounded-lg text-[10px] font-bold uppercase tracking-wide transition 
+                             ${isPrimary ? 'bg-indigo-600 text-white shadow-lg shadow-indigo-500/30' : 'bg-slate-700 text-slate-400 hover:bg-slate-600'}">
+                             ${isPrimary ? '<i class="fa-solid fa-thumbtack mr-1"></i> Pinned' : 'Pin to Bar'}
+                        </button>
+                        ` : '<div class="h-6"></div>'}
+                        
+                    </div>
+                    `;
+                }).join('');
+            }
+
+            function toggleMobileEnable(id) {
+                let mobil = window.currentConfig.mobileNav;
+                if (mobil.enabled.includes(id)) {
+                    // Disable it
+                    mobil.enabled = mobil.enabled.filter(i => i !== id);
+                    mobil.primary = mobil.primary.filter(i => i !== id); // Remove from pinned if disabled
+                } else {
+                    // Enable it
+                    mobil.enabled.push(id);
+                }
+                renderMobileConfig();
+            }
+
+            function toggleMobilePrimary(id) {
+                let mobil = window.currentConfig.mobileNav;
+                if (mobil.primary.includes(id)) {
+                    // Unpin
+                    if (mobil.primary.length > 1) { // Prevent empty bar
+                        mobil.primary = mobil.primary.filter(i => i !== id);
+                    }
+                } else {
+                    // Pin
+                    if (mobil.primary.length < 5) {
+                        mobil.primary.push(id);
+                    } else {
+                        alert("Max 5 items on Bottom Bar.");
+                    }
+                }
+                renderMobileConfig();
+            }
+
+            // --- PC CONFIG RENDERER ---
+            function renderPCConfig() {
+                const container = document.getElementById('pc-tabs-container');
+                const tabs = window.currentConfig.masterTabs;
+                const pc = window.currentConfig.pcNav;
+
+                container.innerHTML = tabs.map(tab => {
+                    const isEnabled = pc.enabled.includes(tab.id);
+                    return `
+                    <div class="flex items-center justify-between p-3 rounded-xl border transition cursor-pointer hover:bg-slate-800
+                        ${isEnabled ? 'bg-slate-800/60 border-blue-500/30' : 'bg-slate-900/40 border-slate-800 opacity-60'}"
+                        onclick="togglePCEnable('${tab.id}')">
+                        
+                        <div class="flex items-center gap-3">
+                            <div class="w-8 h-8 rounded-lg bg-slate-700/50 flex items-center justify-center text-slate-400">
+                                <i class="fa-solid ${tab.icon}"></i>
+                            </div>
+                            <span class="text-sm font-medium ${isEnabled ? 'text-blue-100' : 'text-slate-500'}">${tab.name}</span>
+                        </div>
+                        
+                        <i class="fa-solid ${isEnabled ? 'fa-circle-check text-blue-500' : 'fa-circle text-slate-700'} text-lg"></i>
+                    </div>
+                    `;
+                }).join('');
+            }
+
+            function togglePCEnable(id) {
+                let pc = window.currentConfig.pcNav;
+                if (pc.enabled.includes(id)) {
+                    if (pc.enabled.length > 1) pc.enabled = pc.enabled.filter(i => i !== id);
+                } else {
+                    pc.enabled.push(id);
+                }
+                renderPCConfig();
+            }
+
+            function setTheme(color) {
+                document.getElementById('theme-color').value = color;
+                highlightColorBtn(color);
+            }
+
+            function highlightColorBtn(color) {
+                document.querySelectorAll('[data-color]').forEach(btn => {
+                    const btnColor = btn.getAttribute('data-color');
+                    if (btnColor === color) {
+                        btn.classList.add('ring-white');
+                        btn.classList.remove('ring-transparent');
+                        btn.classList.add('scale-110');
+                    } else {
+                        btn.classList.remove('ring-white');
+                        btn.classList.add('ring-transparent');
+                        btn.classList.remove('scale-110');
+                    }
+                });
+            }
+
+            function updateLogoPreview() {
+                const val = document.getElementById('app-logo').value;
+                const el = document.getElementById('logo-preview');
+                if (val.length > 10 && (val.startsWith('http') || val.startsWith('data:'))) {
+                    el.innerHTML = `<img src="${val}" class="w-full h-full object-cover">`;
+                } else {
+                    el.innerText = val;
+                }
+            }
+
+            function handleIconUpload(input) {
+                const file = input.files[0];
+                if (!file) return;
+                if (file.size > 500 * 1024) {
+                    alert("Image too large (>500KB). Please use a smaller file.");
+                    input.value = '';
+                    return;
+                }
+                const reader = new FileReader();
+                reader.onload = (e) => {
+                    document.getElementById('app-logo').value = e.target.result;
+                    updateLogoPreview();
+                };
+                reader.readAsDataURL(file);
+            }
+
+            document.getElementById('app-logo').addEventListener('input', updateLogoPreview);
+
+            function saveConfig() {
+                const newConfig = {
+                    ...window.currentConfig, // Keep structure
+                    appName: document.getElementById('app-name').value,
+                    appVersion: document.getElementById('app-version').value,
+                    appLogo: document.getElementById('app-logo').value,
+                    themeColor: document.getElementById('theme-color').value,
+                    showLoader: document.getElementById('show-loader').checked,
+                    forceDark: document.getElementById('force-dark').checked,
+                    currency: document.getElementById('app-currency').value,
+                    units: document.getElementById('app-units').value,
+                    aiPersonality: document.getElementById('app-ai-personality').value
+                };
+
+                try {
+                    localStorage.setItem('app_config', JSON.stringify(newConfig));
+
+                    // Visual Feedback
+                    const btn = document.querySelector('button[onclick="saveConfig()"]');
+                    const oldContent = btn.innerHTML;
+                    btn.innerHTML = '<i class="fa-solid fa-check mr-2"></i> Saved';
+                    btn.classList.add('from-green-600', 'to-emerald-600');
+
+                    setTimeout(() => {
+                        btn.innerHTML = oldContent;
+                        btn.classList.remove('from-green-600', 'to-emerald-600');
+                    }, 2000);
+
+                } catch (e) {
+                    alert("Save failed. LocalStorage full?");
+                    console.error(e);
+                }
+            }
+
+            // Init
+            loadUI();
+
+            // --- NEW: Load Logic ---
+            setTimeout(loadMainDB, 100);
+
+            // --- NEW: Main DB Handling ---
+            function getDB() {
+                const saved = localStorage.getItem('sk_app_ultimate_v6');
+                return saved ? JSON.parse(saved) : null;
+            }
+
+            function loadMainDB() {
+                const db = getDB();
+                if (!db) return; // Not initialized yet
+
+                // Defaults if missing
+                if (!db.preferences) db.preferences = { diet: 'non-veg', targetBudget: 60000, lowStock: 2 };
+
+                const dietEl = document.getElementById('pref-diet');
+                const budgetEl = document.getElementById('pref-budget');
+                const lowEl = document.getElementById('pref-lowstock');
+
+                if (dietEl && db.preferences.diet) dietEl.value = db.preferences.diet;
+                if (budgetEl && db.preferences.targetBudget) budgetEl.value = db.preferences.targetBudget;
+                if (lowEl && db.preferences.lowStock !== undefined) lowEl.value = db.preferences.lowStock;
+            }
+
+            function saveMainDB() {
+                const db = getDB();
+                if (!db) return;
+
+                if (!db.preferences) db.preferences = {};
+
+                const dietEl = document.getElementById('pref-diet');
+                const budgetEl = document.getElementById('pref-budget');
+                const lowEl = document.getElementById('pref-lowstock');
+
+                if (dietEl) db.preferences.diet = dietEl.value;
+                if (budgetEl) db.preferences.targetBudget = parseInt(budgetEl.value) || 60000;
+                if (lowEl) db.preferences.lowStock = parseInt(lowEl.value) || 2;
+
+                localStorage.setItem('sk_app_ultimate_v6', JSON.stringify(db));
+            }
+
+            // --- Override saveConfig to save both ---
+            const originalSave = saveConfig;
+            saveConfig = function () {
+                originalSave(); // Save UI config
+                saveMainDB();   // Save Logic config
+            }
+
+            // --- Data Management ---
+            function backupData() {
+                const db = getDB();
+                const config = getConfig();
+                const backup = {
+                    db: db,
+                    config: config,
+                    date: new Date().toISOString(),
+                    version: "V7.8"
+                };
+
+                const dataStr = "data:text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(backup, null, 2));
+                const downloadAnchorNode = document.createElement('a');
+                downloadAnchorNode.setAttribute("href", dataStr);
+                downloadAnchorNode.setAttribute("download", "kitchen_ai_backup_" + new Date().toISOString().slice(0, 10) + ".json");
+                document.body.appendChild(downloadAnchorNode);
+                downloadAnchorNode.click();
+                downloadAnchorNode.remove();
+            }
+
+            function restoreData(input) {
+                const file = input.files[0];
+                if (!file) return;
+
+                if (!confirm("Overwrite current data with this backup? This cannot be undone.")) {
+                    input.value = '';
+                    return;
+                }
+
+                const reader = new FileReader();
+                reader.onload = (e) => {
+                    try {
+                        const backup = JSON.parse(e.target.result);
+                        // Support legacy or new format
+                        if (backup.db) {
+                            localStorage.setItem('sk_app_ultimate_v6', JSON.stringify(backup.db));
+                            if (backup.config) localStorage.setItem('app_config', JSON.stringify(backup.config));
+                        } else {
+                            // Assume direct DB dump
+                            localStorage.setItem('sk_app_ultimate_v6', JSON.stringify(backup));
+                        }
+
+                        alert("Restore successful! App will reload.");
+                        window.location.reload();
+                    } catch (err) {
+                        alert("Invalid backup file.");
+                        console.error(err);
+                    }
+                };
+                reader.readAsText(file);
+            }
+
+            async function syncPricesSettings(input) {
+                const file = input.files[0];
+                if (!file) return;
+
+                try {
+                    const text = await file.text();
+                    const data = JSON.parse(text); // Expecting { "Item": price }
+                    const db = getDB();
+                    if (!db) { alert("App data not found."); return; }
+
+                    let count = 0;
+                    if (typeof CATALOG_MASTER !== 'undefined') {
+                        // Update In-Memory Catalog (limit usage here since it won't persist to file)
+                        // But we can update inventory items prices found in DB
+                        Object.keys(data).forEach(key => {
+                            const val = data[key];
+                            // Find in inventory
+                            const invItem = db.inventory.find(i => i.n.toLowerCase() === key.toLowerCase());
+                            if (invItem) {
+                                if (typeof val === 'number') invItem.p = val;
+                                else if (typeof val === 'object') {
+                                    invItem.p = val.price || invItem.p;
+                                }
+                                count++;
+                            }
+                        });
+                        localStorage.setItem('sk_app_ultimate_v6', JSON.stringify(db));
+                        alert(`Updated prices for ${count} items in your inventory.`);
+                    } else {
+                        alert("Market Data not loaded. Cannot sync.");
+                    }
+                } catch (e) {
+                    console.error(e);
+                    alert("Failed to sync prices. Invalid format?");
+                }
+                input.value = '';
+            }
+
+            function factoryReset() {
+                if (confirm("⚠️ FACTORY RESET: \n\nAre you sure you want to delete ALL data? This includes inventory, recipes, and settings.")) {
+                    if (confirm("Double Check: This is permanent. Proceed?")) {
+                        localStorage.clear(); // Wipes everything
+                        window.location.href = 'index.html';
+                    }
+                }
+            }
+
+        </script>
+</body>
+
+</html>
